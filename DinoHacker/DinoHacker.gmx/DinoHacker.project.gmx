@@ -12,6 +12,7 @@
       <sprite>sprites\enemyUp</sprite>
       <sprite>sprites\enemyRight</sprite>
       <sprite>sprites\enemyDown</sprite>
+      <sprite>sprites\enemyDead</sprite>
     </sprites>
     <sprite>sprites\hackingSprite</sprite>
     <sprite>sprites\Camera</sprite>
@@ -35,8 +36,8 @@
     <object>objects\Wall_Obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\testRoom</room>
     <room>rooms\room1</room>
+    <room>rooms\testRoom</room>
     <room>rooms\checkRoom</room>
   </rooms>
   <constants number="2">

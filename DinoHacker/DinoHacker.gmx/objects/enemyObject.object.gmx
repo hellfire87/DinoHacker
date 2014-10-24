@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>lastImageRotation = direction;
+isAlive = true;
 </string>
           </argument>
         </arguments>
@@ -49,7 +50,7 @@
           <argument>
             <kind>1</kind>
             <string>var distanceToPlayer = distance_to_object(playerObject);
-if (distanceToPlayer &lt; 150) {
+if (isAlive &amp;&amp; distanceToPlayer &lt; 150) {
   var playerDirection = point_direction(x,y,playerObject.x,playerObject.y);
   var enemyDirection = direction;
   
@@ -63,16 +64,18 @@ if (distanceToPlayer &lt; 150) {
   var checkDirection = abs(enemyDirection - playerDirection);
   if (checkDirection &lt; 22) {
     with (playerObject) instance_destroy();
-    room_goto(testRoom);
+    room_restart();
   }  
 } 
 
-if (distanceToPlayer &lt; 25 &amp;&amp; playerObject.noiseMove) {
+if (isAlive &amp;&amp; distanceToPlayer &lt; 25 &amp;&amp; playerObject.noiseMove) {
     with (playerObject) instance_destroy();
-    room_goto(testRoom);
+    room_restart();
 }
 
-if (abs(lastImageRotation - direction) &gt;= 1)  {
+if (!isAlive) {
+    sprite_index = enemyDead;
+} if (abs(lastImageRotation - direction) &gt;= 1)  {
     lastImageRotation = direction;
     if (direction &lt;= 45 || direction &gt; 315) {
         sprite_index = enemyLeft;
@@ -84,6 +87,8 @@ if (abs(lastImageRotation - direction) &gt;= 1)  {
         sprite_index = enemyDown;
     }
 }
+
+
 
 </string>
           </argument>
