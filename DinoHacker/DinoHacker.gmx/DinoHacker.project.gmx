@@ -37,6 +37,7 @@
   <rooms name="rooms">
     <room>rooms\testRoom</room>
     <room>rooms\room1</room>
+    <room>rooms\checkRoom</room>
   </rooms>
   <constants number="2">
     <constant name="GM_build_date">41931.6951082176</constant>
