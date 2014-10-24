@@ -14,6 +14,10 @@
       <sprite>sprites\enemyDown</sprite>
     </sprites>
     <sprite>sprites\hackingSprite</sprite>
+    <sprite>sprites\Camera</sprite>
+    <sprite>sprites\Doors</sprite>
+    <sprite>sprites\Terminal</sprite>
+    <sprite>sprites\Walls</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -25,9 +29,14 @@
     <object>objects\playerObject</object>
     <object>objects\enemyObject</object>
     <object>objects\hackingObject</object>
+    <object>objects\Camera_Obj</object>
+    <object>objects\Door_Obj</object>
+    <object>objects\Terminal_Obj</object>
+    <object>objects\Wall_Obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\testRoom</room>
+    <room>rooms\room1</room>
   </rooms>
   <constants number="2">
     <constant name="GM_build_date">41931.6951082176</constant>
