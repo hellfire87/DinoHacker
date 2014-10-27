@@ -75,7 +75,9 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y += runSpeed;
+            <string>if (!object_exists(hackingObject)) {
+    y += runSpeed;
+}
 </string>
           </argument>
         </arguments>
@@ -98,7 +100,9 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x += runSpeed;
+            <string>if (!object_exists(hackingObject)) {
+    x += runSpeed;
+}
 </string>
           </argument>
         </arguments>
@@ -121,7 +125,9 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>y -= runSpeed;
+            <string>if (!object_exists(hackingObject)) {
+    y -= runSpeed;
+}
 </string>
           </argument>
         </arguments>
@@ -144,7 +150,9 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x -= runSpeed;
+            <string>if (!object_exists(hackingObject)) {
+    x -= runSpeed;
+}
 </string>
           </argument>
         </arguments>
@@ -167,10 +175,14 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>enemyToCheck =instance_nearest(x,y,enemyObject); 
-if (distance_to_object(enemyToCheck) &lt; 5) {
-    enemyToCheck.isAlive = false;
+            <string>if (!object_exists(hackingObject)) {
+    enemyToCheck = instance_nearest(x,y,enemyObject); 
+    if (distance_to_object(enemyToCheck) &lt; 10) {
+        enemyToCheck.isAlive = false;
+    }
 }
+
+
 </string>
           </argument>
         </arguments>
@@ -193,8 +205,10 @@ if (distance_to_object(enemyToCheck) &lt; 5) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>runSpeed -= 4;
-noiseMove = false;
+            <string>if (!object_exists(hackingObject)) {
+    runSpeed -= 4;
+    noiseMove = false;
+}
 </string>
           </argument>
         </arguments>
@@ -217,8 +231,10 @@ noiseMove = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>runSpeed += 4;
-noiseMove = true;
+            <string>if (!object_exists(hackingObject)) {
+    runSpeed += 4;
+    noiseMove = true;
+}
 </string>
           </argument>
         </arguments>

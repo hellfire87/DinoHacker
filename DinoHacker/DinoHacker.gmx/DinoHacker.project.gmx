@@ -14,11 +14,16 @@
       <sprite>sprites\enemyDown</sprite>
       <sprite>sprites\enemyDead</sprite>
     </sprites>
-    <sprite>sprites\hackingSprite</sprite>
     <sprite>sprites\Camera</sprite>
     <sprite>sprites\Doors</sprite>
     <sprite>sprites\Terminal</sprite>
     <sprite>sprites\Walls</sprite>
+    <sprites name="HackingSprites">
+      <sprite>sprites\hackingSpritePrime1</sprite>
+      <sprite>sprites\hackingSpritePrime2</sprite>
+      <sprite>sprites\hackingSpritePrime3</sprite>
+      <sprite>sprites\hackingSpritePrime4</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
