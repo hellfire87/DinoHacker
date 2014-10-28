@@ -3,7 +3,7 @@
   <spriteName>hackingSpritePrime1</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>prime1 = 1;
+            <string>solved = false;
+
+prime1 = 1;
 prime2 = 1;
 prime3 = 1;
 prime4 = 1;
@@ -45,18 +47,39 @@ for (i = 0; i &lt; 4; i++) {
 }
 
 selectedPrime = "1";
-
-draw_text(x +  50, y - 50, answer);
-draw_text(x - 150, y + 25, prime1);
-draw_text(x -  55, y + 25, prime2);
-draw_text(x +  45, y + 25, prime3);
-draw_text(x + 145, y + 25, prime4);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="40">
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(x +  50, y - 50, string(answer));
+draw_text(x - 150, y + 25, string(prime1));
+draw_text(x -  55, y + 25, string(prime2));
+draw_text(x +  45, y + 25, string(prime3));
+draw_text(x + 145, y + 25, string(prime4));
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="10" enumb="40">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -78,7 +101,7 @@ draw_text(x + 145, y + 25, prime4);
         prime1 = 7;
     } else if (prime1 == 2) {
         prime1 = 1;
-    } else if (print1 == 3) {
+    } else if (prime1 == 3) {
         prime1 = 2;
     } else if (prime1 == 5) {
         prime1 = 3;
@@ -86,13 +109,13 @@ draw_text(x + 145, y + 25, prime4);
         prime1 = 5;
     }
     
-    draw_text(x - 150, y + 25, prime1);
+    draw_text(x - 150, y + 25, string(prime1));
 } else if (selectedPrime == "2") {
     if (prime2 == 1) {
         prime2 = 7;
     } else if (prime2 == 2) {
         prime2 = 1;
-    } else if (print1 == 3) {
+    } else if (prime2 == 3) {
         prime2 = 2;
     } else if (prime2 == 5) {
         prime2 = 3;
@@ -100,13 +123,13 @@ draw_text(x + 145, y + 25, prime4);
         prime2 = 5;
     }
     
-    draw_text(x -  55, y + 25, prime2);
+    draw_text(x -  55, y + 25, string(prime2));
 } else if (selectedPrime == "3") {
     if (prime3 == 1) {
         prime3 = 7;
     } else if (prime3 == 2) {
         prime3 = 1;
-    } else if (print1 == 3) {
+    } else if (prime3 == 3) {
         prime3 = 2;
     } else if (prime3 == 5) {
         prime3 = 3;
@@ -114,13 +137,13 @@ draw_text(x + 145, y + 25, prime4);
         prime3 = 5;
     }
     
-    draw_text(x +  45, y + 25, prime3);
+    draw_text(x +  45, y + 25, string(prime3));
 } else if (selectedPrime == "4") {
     if (prime4 == 1) {
         prime4 = 7;
     } else if (prime4 == 2) {
         prime4 = 1;
-    } else if (print1 == 3) {
+    } else if (prime4 == 3) {
         prime4 = 2;
     } else if (prime4 == 5) {
         prime4 = 3;
@@ -128,19 +151,19 @@ draw_text(x + 145, y + 25, prime4);
         prime4 = 5;
     }
     
-    draw_text(x + 145, y + 25, prime4);
+    draw_text(x + 145, y + 25, string(prime4));
 }
 
 currentGuess = prime1*prime2*prime3*prime4;
 if (currentGuess == answer) {
-
+    solved = true;
 }
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="39">
+    <event eventtype="10" enumb="39">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -176,7 +199,7 @@ if (currentGuess == answer) {
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="38">
+    <event eventtype="10" enumb="38">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -198,7 +221,7 @@ if (currentGuess == answer) {
         prime1 = 2;
     } else if (prime1 == 2) {
         prime1 = 3;
-    } else if (print1 == 3) {
+    } else if (prime1 == 3) {
         prime1 = 5;
     } else if (prime1 == 5) {
         prime1 = 7;
@@ -206,13 +229,13 @@ if (currentGuess == answer) {
         prime1 = 1;
     }
     
-    draw_text(x - 150, y + 25, prime1);
+    draw_text(x - 150, y + 25, string(prime1));
 } else if (selectedPrime == "2") {
     if (prime2 == 1) {
         prime2 = 2;
     } else if (prime2 == 2) {
         prime2 = 3;
-    } else if (print1 == 3) {
+    } else if (prime2 == 3) {
         prime2 = 5;
     } else if (prime2 == 5) {
         prime2 = 7;
@@ -220,13 +243,13 @@ if (currentGuess == answer) {
         prime2 = 1;
     }
     
-    draw_text(x -  55, y + 25, prime2);
+    draw_text(x -  55, y + 25, string(prime2));
 } else if (selectedPrime == "3") {
     if (prime3 == 1) {
         prime3 = 2;
     } else if (prime3 == 2) {
         prime3 = 3;
-    } else if (print1 == 3) {
+    } else if (prime3 == 3) {
         prime3 = 5;
     } else if (prime3 == 5) {
         prime3 = 7;
@@ -234,13 +257,13 @@ if (currentGuess == answer) {
         prime3 = 1;
     }
     
-    draw_text(x +  45, y + 25, prime3);
+    draw_text(x +  45, y + 25, string(prime3));
 } else if (selectedPrime == "4") {
     if (prime4 == 1) {
         prime4 = 2;
     } else if (prime4 == 2) {
         prime4 = 3;
-    } else if (print1 == 3) {
+    } else if (prime4 == 3) {
         prime4 = 5;
     } else if (prime4 == 5) {
         prime4 = 7;
@@ -248,19 +271,19 @@ if (currentGuess == answer) {
         prime4 = 1;
     }
     
-    draw_text(x + 145, y + 25, prime4);
+    draw_text(x + 145, y + 25, string(prime4));
 }
 
 currentGuess = prime1*prime2*prime3*prime4;
 if (currentGuess == answer) {
-
+    solved = true;
 }
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="5" enumb="37">
+    <event eventtype="10" enumb="37">
       <action>
         <libid>1</libid>
         <id>603</id>
