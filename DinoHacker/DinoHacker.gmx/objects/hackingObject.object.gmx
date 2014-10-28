@@ -56,6 +56,126 @@ draw_text(x + 145, y + 25, prime4);
         </arguments>
       </action>
     </event>
+    <event eventtype="5" enumb="40">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (selectedPrime == "1") {
+    if (prime1 == 1) {
+        prime1 = 7;
+    } else if (prime1 == 2) {
+        prime1 = 1;
+    } else if (print1 == 3) {
+        prime1 = 2;
+    } else if (prime1 == 5) {
+        prime1 = 3;
+    } else if (prime1 == 7) {
+        prime1 = 5;
+    }
+    
+    draw_text(x - 150, y + 25, prime1);
+} else if (selectedPrime == "2") {
+    if (prime2 == 1) {
+        prime2 = 7;
+    } else if (prime2 == 2) {
+        prime2 = 1;
+    } else if (print1 == 3) {
+        prime2 = 2;
+    } else if (prime2 == 5) {
+        prime2 = 3;
+    } else if (prime2 == 7) {
+        prime2 = 5;
+    }
+    
+    draw_text(x -  55, y + 25, prime2);
+} else if (selectedPrime == "3") {
+    if (prime3 == 1) {
+        prime3 = 7;
+    } else if (prime3 == 2) {
+        prime3 = 1;
+    } else if (print1 == 3) {
+        prime3 = 2;
+    } else if (prime3 == 5) {
+        prime3 = 3;
+    } else if (prime3 == 7) {
+        prime3 = 5;
+    }
+    
+    draw_text(x +  45, y + 25, prime3);
+} else if (selectedPrime == "4") {
+    if (prime4 == 1) {
+        prime4 = 7;
+    } else if (prime4 == 2) {
+        prime4 = 1;
+    } else if (print1 == 3) {
+        prime4 = 2;
+    } else if (prime4 == 5) {
+        prime4 = 3;
+    } else if (prime4 == 7) {
+        prime4 = 5;
+    }
+    
+    draw_text(x + 145, y + 25, prime4);
+}
+
+currentGuess = prime1*prime2*prime3*prime4;
+if (currentGuess == answer) {
+
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="39">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (selectedPrime == "1") {
+    selectedPrime = "2";
+    sprite_index = hackingSpritePrime2;
+} else if (selectedPrime == "2") {
+    selectedPrime = "3";
+    sprite_index = hackingSpritePrime3;
+} else if (selectedPrime == "3") {
+    selectedPrime = "4";
+    sprite_index = hackingSpritePrime4;
+}  else if (selectedPrime == "4") {
+    selectedPrime = "1";
+    sprite_index = hackingSpritePrime1;
+}
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="5" enumb="38">
       <action>
         <libid>1</libid>
@@ -157,7 +277,20 @@ if (currentGuess == answer) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>if (selectedPrime == "1") {
+    selectedPrime = "4";
+    sprite_index = hackingSpritePrime4;
+} else if (selectedPrime == "2") {
+    selectedPrime = "1";
+    sprite_index = hackingSpritePrime1;
+} else if (selectedPrime == "3") {
+    selectedPrime = "2";
+    sprite_index = hackingSpritePrime2;
+}  else if (selectedPrime == "4") {
+    selectedPrime = "3";
+    sprite_index = hackingSpritePrime3;
+}
+</string>
           </argument>
         </arguments>
       </action>
