@@ -75,7 +75,7 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!object_exists(hackingObject)) {
+            <string>if (!instance_exists(hackingObject)) {
     y += runSpeed;
 }
 </string>
@@ -100,7 +100,7 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!object_exists(hackingObject)) {
+            <string>if (!instance_exists(hackingObject)) {
     x += runSpeed;
 }
 </string>
@@ -125,7 +125,7 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!object_exists(hackingObject)) {
+            <string>if (!instance_exists(hackingObject)) {
     y -= runSpeed;
 }
 </string>
@@ -150,7 +150,7 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!object_exists(hackingObject)) {
+            <string>if (!instance_exists(hackingObject)) {
     x -= runSpeed;
 }
 </string>
@@ -175,7 +175,7 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!object_exists(hackingObject)) {
+            <string>if (!instance_exists(hackingObject)) {
     enemyToCheck = instance_nearest(x,y,enemyObject); 
     if (distance_to_object(enemyToCheck) &lt; 10) {
         enemyToCheck.isAlive = false;
@@ -205,8 +205,8 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!object_exists(hackingObject)) {
-    runSpeed -= 4;
+            <string>if (!instance_exists(hackingObject)) {
+    runSpeed = 4;
     noiseMove = false;
 }
 </string>
@@ -231,8 +231,8 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!object_exists(hackingObject)) {
-    runSpeed += 4;
+            <string>if (!instance_exists(hackingObject)) {
+    runSpeed = 8;
     noiseMove = true;
 }
 </string>
