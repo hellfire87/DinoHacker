@@ -49,7 +49,7 @@
     <room>rooms\checkRoom</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41940.2252132523</constant>
+    <constant name="GM_build_date">41940.2364871181</constant>
     <constant name="GM_version">'100'</constant>
   </constants>
   <help>

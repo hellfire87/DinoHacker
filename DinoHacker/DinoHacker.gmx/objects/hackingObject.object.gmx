@@ -52,7 +52,7 @@ selectedPrime = "1";
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="73">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -69,17 +69,17 @@ selectedPrime = "1";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(x +  50, y - 50, string(answer));
-draw_text(x - 150, y + 25, string(prime1));
-draw_text(x -  55, y + 25, string(prime2));
-draw_text(x +  45, y + 25, string(prime3));
-draw_text(x + 145, y + 25, string(prime4));
+            <string>draw_text_transformed_colour(x +  50, y - 50, string(answer), 2,2, 0, c_red, c_red,c_red,c_red,1);
+draw_text_transformed_colour(x - 150, y + 25, string(prime1), 2,2, 0, c_navy, c_navy,c_navy,c_navy,1);
+draw_text_transformed_colour(x -  55, y + 25, string(prime2), 2,2, 0, c_navy, c_navy,c_navy,c_navy,1);
+draw_text_transformed_colour(x +  45, y + 25, string(prime3), 2,2, 0, c_navy, c_navy,c_navy,c_navy,1);
+draw_text_transformed_colour(x + 145, y + 25, string(prime4), 2,2, 0, c_navy, c_navy,c_navy,c_navy,1);
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="10" enumb="40">
+    <event eventtype="9" enumb="40">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -163,7 +163,7 @@ if (currentGuess == answer) {
         </arguments>
       </action>
     </event>
-    <event eventtype="10" enumb="39">
+    <event eventtype="9" enumb="39">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -199,7 +199,7 @@ if (currentGuess == answer) {
         </arguments>
       </action>
     </event>
-    <event eventtype="10" enumb="38">
+    <event eventtype="9" enumb="38">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -283,7 +283,7 @@ if (currentGuess == answer) {
         </arguments>
       </action>
     </event>
-    <event eventtype="10" enumb="37">
+    <event eventtype="9" enumb="37">
       <action>
         <libid>1</libid>
         <id>603</id>
