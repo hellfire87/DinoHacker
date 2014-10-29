@@ -62,7 +62,7 @@ if (isAlive &amp;&amp; distanceToPlayer &lt; 150) {
   }
   
   var checkDirection = abs(enemyDirection - playerDirection);
-  if (checkDirection &lt; 22) {
+  if (checkDirection &lt; 22 &amp;&amp; collision_line(x,y,playerObject.x, playerObject.y,Wall_Obj, false, true) == noone) {
     with (playerObject) instance_destroy();
     room_restart();
   }  
@@ -75,6 +75,7 @@ if (isAlive &amp;&amp; distanceToPlayer &lt; 25 &amp;&amp; playerObject.noiseMov
 
 if (!isAlive) {
     sprite_index = enemyDead;
+    path_end();
 } if (abs(lastImageRotation - direction) &gt;= 1)  {
     lastImageRotation = direction;
     if (direction &lt;= 45 || direction &gt; 315) {
