@@ -25,6 +25,10 @@
       <sprite>sprites\hackingSpritePrime3</sprite>
       <sprite>sprites\hackingSpritePrime4</sprite>
     </sprites>
+    <sprite>sprites\camera_png</sprite>
+    <sprite>sprites\boom_it_goes</sprite>
+    <sprite>sprites\hazmat</sprite>
+    <sprite>sprites\hazmatmovL</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
