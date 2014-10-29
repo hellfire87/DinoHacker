@@ -16,6 +16,7 @@
     </sprites>
     <sprite>sprites\Camera</sprite>
     <sprite>sprites\Doors</sprite>
+    <sprite>sprites\LockedDoor</sprite>
     <sprite>sprites\Terminal</sprite>
     <sprite>sprites\Walls</sprite>
     <sprites name="HackingSprites">
@@ -39,6 +40,7 @@
     <object>objects\hackingObject</object>
     <object>objects\Camera_Obj</object>
     <object>objects\Door_Obj</object>
+    <object>objects\LockedDoor_Obj</object>
     <object>objects\Terminal_Obj</object>
     <object>objects\DoorHackingTerminal_Obj</object>
     <object>objects\Wall_Obj</object>
