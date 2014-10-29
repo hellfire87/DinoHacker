@@ -33,6 +33,9 @@
     <path>paths\path2</path>
     <path>paths\Level1_Path1</path>
     <path>paths\Level1_Path2</path>
+    <path>paths\Level1_Path3</path>
+    <path>paths\Level1_Path4</path>
+    <path>paths\Level1_Path5</path>
   </paths>
   <objects name="objects">
     <object>objects\playerObject</object>
