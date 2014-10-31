@@ -14,7 +14,7 @@
       <sprite>sprites\enemyDown</sprite>
       <sprite>sprites\enemyDead</sprite>
     </sprites>
-    <sprite>sprites\Camera</sprite>
+    <sprite>sprites\Turret</sprite>
     <sprite>sprites\Doors</sprite>
     <sprite>sprites\LockedDoor</sprite>
     <sprite>sprites\Terminal</sprite>
@@ -32,7 +32,6 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
-    <path>paths\path0</path>
     <path>paths\path1</path>
     <path>paths\path2</path>
     <path>paths\Level1_Path1</path>
@@ -40,6 +39,9 @@
     <path>paths\Level1_Path3</path>
     <path>paths\Level1_Path4</path>
     <path>paths\Level1_Path5</path>
+    <path>paths\Level2_Path1</path>
+    <path>paths\Level2_Path2</path>
+    <path>paths\Level2_Path3</path>
   </paths>
   <objects name="objects">
     <object>objects\playerObject</object>
@@ -51,9 +53,11 @@
     <object>objects\Terminal_Obj</object>
     <object>objects\DoorHackingTerminal_Obj</object>
     <object>objects\Wall_Obj</object>
+    <object>objects\Turret_Obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>
+    <room>rooms\room2</room>
     <room>rooms\testRoom</room>
     <room>rooms\checkRoom</room>
   </rooms>
