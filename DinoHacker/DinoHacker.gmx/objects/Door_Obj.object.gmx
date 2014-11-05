@@ -25,14 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (distance_to_object(playerObject) &lt; 20 || distance_to_object(enemyObject) &lt; 20) {
-  if (visible) {
-    visible = false;
-    solid = false;
+            <string>distToPlayer = distance_to_object(playerObject);
+distToEnemy = distance_to_object(enemyObject);
+
+if (distToPlayer &lt; 30 || distToEnemy &lt; 30) {
+  if (sprite_index == Doors) {
+    sprite_index = openDoor;
   }
-} else if (!visible) {
-  visible = true;
-  solid = true;
+} else if (sprite_index == openDoor) {
+    sprite_index = Doors;
 }
 </string>
           </argument>

@@ -3,7 +3,7 @@
   <spriteName>hackingSpritePrime1</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>1</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -70,10 +70,10 @@ selectedPrime = "1";
           <argument>
             <kind>1</kind>
             <string>draw_text_transformed_colour(x +  50, y - 50, string(answer), 2,2, 0, c_red, c_red,c_red,c_red,1);
-draw_text_transformed_colour(x - 150, y + 25, string(prime1), 2,2, 0, c_navy, c_navy,c_navy,c_navy,1);
-draw_text_transformed_colour(x -  55, y + 25, string(prime2), 2,2, 0, c_navy, c_navy,c_navy,c_navy,1);
-draw_text_transformed_colour(x +  45, y + 25, string(prime3), 2,2, 0, c_navy, c_navy,c_navy,c_navy,1);
-draw_text_transformed_colour(x + 145, y + 25, string(prime4), 2,2, 0, c_navy, c_navy,c_navy,c_navy,1);
+draw_text_transformed_colour(x - 150, y + 25, string(prime1), 2,2, 0, c_green, c_green,c_green,c_green,1);
+draw_text_transformed_colour(x -  55, y + 25, string(prime2), 2,2, 0, c_green, c_green,c_green,c_green,1);
+draw_text_transformed_colour(x +  45, y + 25, string(prime3), 2,2, 0, c_green, c_green,c_green,c_green,1);
+draw_text_transformed_colour(x + 145, y + 25, string(prime4), 2,2, 0, c_green, c_green,c_green,c_green,1);
 </string>
           </argument>
         </arguments>

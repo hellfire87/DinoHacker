@@ -3,7 +3,7 @@
   <spriteName>Terminal</spriteName>
   <solid>-1</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -79,7 +79,7 @@ var terminalHackingObject;
           <argument>
             <kind>1</kind>
             <string>if (!instance_exists(hackingObject) &amp;&amp; distance_to_object(playerObject) &lt; 10) {
-    instance_create(window_get_width()/2, window_get_height()- 100, hackingObject);
+    instance_create(view_wview[0]/2, view_vborder[0]+view_hview[0]-25, hackingObject);
 }
 </string>
           </argument>
