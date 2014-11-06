@@ -61,9 +61,11 @@ if (isAlive &amp;&amp; distanceToPlayer &lt; 150) {
     playerDirection -= 360;
   }
   
-  var checkDirection = abs(enemyDirection - playerDirection);
-  if (checkDirection &lt; 22 &amp;&amp; collision_line(x,y,playerObject.x, playerObject.y,Wall_Obj, false, true) == noone) {
-    with (playerObject) instance_destroy();
+  checkDirection = abs(enemyDirection - playerDirection);
+  wallBetween = collision_line(x,y,playerObject.x, playerObject.y,Wall_Obj, false, true) == noone;
+  doorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
+  lockedDoorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
+  if (checkDirection &lt; 22 &amp;&amp; wallBetween &amp;&amp; doorBetween &amp;&amp; lockedDoorBetween) {
     room_restart();
   }  
 } 

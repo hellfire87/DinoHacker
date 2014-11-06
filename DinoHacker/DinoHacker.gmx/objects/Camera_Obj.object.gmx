@@ -7,7 +7,93 @@
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
-  <events/>
+  <events>
+    <event eventtype="0" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alive = true;
+lookDirectionLow = 0;
+lookDirectionHigh = 0;
+goingTowardsHigh = true;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//camera look code
+if(alive) {
+    if (goingTowardsHigh) {
+        direction += 5;
+        if(direction &gt;= lookDirectionHigh ) {
+            goingTowardsHigh = false;           
+        }
+    } else {
+        direction -= 5;
+        if (direction &lt;= lookDirectionLow ) {
+            goingTowardsHigh = true;
+        }
+    }
+} 
+
+//check for the player
+var distanceToPlayer = distance_to_object(playerObject);
+if (alive &amp;&amp; distanceToPlayer &lt; 150) {
+  var playerDirection = point_direction(x,y,playerObject.x,playerObject.y);
+  var enemyDirection = direction;
+  
+  if (enemyDirection &gt;= (360-8)) {
+    enemyDirection -= 360;
+  }
+  if (playerDirection &gt;= (360-8)) {
+    playerDirection -= 360;
+  }
+  
+  checkDirection = abs(enemyDirection - playerDirection);
+  wallBetween = collision_line(x,y,playerObject.x, playerObject.y,Wall_Obj, false, true) == noone;
+  doorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
+  lockedDoorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
+  if (checkDirection &lt; 8 &amp;&amp; wallBetween &amp;&amp; doorBetween &amp;&amp; lockedDoorBetween) {
+    alarm[0] = 200;
+    direction = playerDirection;
+  }  
+} 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+  </events>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>
   <PhysicsObjectShape>0</PhysicsObjectShape>
