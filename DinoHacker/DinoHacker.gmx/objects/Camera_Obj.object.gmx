@@ -86,6 +86,8 @@ if (alive &amp;&amp; distanceToPlayer &lt; 150) {
   if (checkDirection &lt; 8 &amp;&amp; wallBetween &amp;&amp; doorBetween &amp;&amp; lockedDoorBetween) {
     alarm[0] = 200;
     direction = playerDirection;
+    enemyObject.playerX = playerObject.x;
+    enemyObject.playerY = playerObject.y;
   }  
 } 
 </string>
