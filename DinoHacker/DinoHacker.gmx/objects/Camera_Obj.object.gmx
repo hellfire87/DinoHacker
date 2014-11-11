@@ -29,6 +29,7 @@
 lookDirectionLow = 0;
 lookDirectionHigh = 0;
 goingTowardsHigh = true;
+image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -69,8 +70,8 @@ if(alive) {
 //check for the player
 var distanceToPlayer = distance_to_object(playerObject);
 if (alive &amp;&amp; distanceToPlayer &lt; 150) {
-  var playerDirection = point_direction(x,y,playerObject.x,playerObject.y);
-  var enemyDirection = direction;
+  playerDirection = point_direction(x,y,playerObject.x,playerObject.y);
+  enemyDirection = direction;
   
   if (enemyDirection &gt;= (360-8)) {
     enemyDirection -= 360;
@@ -84,10 +85,11 @@ if (alive &amp;&amp; distanceToPlayer &lt; 150) {
   doorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
   lockedDoorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
   if (checkDirection &lt; 8 &amp;&amp; wallBetween &amp;&amp; doorBetween &amp;&amp; lockedDoorBetween) {
-    alarm[0] = 200;
+    enemyObject.alarm[0] = 900;
     direction = playerDirection;
     enemyObject.playerX = playerObject.x;
     enemyObject.playerY = playerObject.y;
+    enemyObject.isAlert = true;
   }  
 } 
 </string>

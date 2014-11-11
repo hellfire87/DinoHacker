@@ -105,15 +105,15 @@
     <instance objName="Door_Obj" x="460" y="208" name="inst_F2E19039" locked="0" code="" scaleX="0.25" scaleY="2.29999995231628" colour="4294967295" rotation="0"/>
     <instance objName="Door_Obj" x="268" y="72" name="inst_D9F5F3A7" locked="0" code="" scaleX="0.25" scaleY="3.40000009536743" colour="4294967295" rotation="0"/>
     <instance objName="Door_Obj" x="780" y="220" name="inst_3ECE7F3A" locked="0" code="" scaleX="0.25" scaleY="2" colour="4294967295" rotation="0"/>
-    <instance objName="LockedDoor_Obj" x="1252" y="676" name="LockedDoor_001" locked="0" code="" scaleX="0.25" scaleY="2.65000009536743" colour="4294967295" rotation="90"/>
+    <instance objName="LockedDoor_Obj" x="1292" y="676" name="LockedDoor_001" locked="0" code="" scaleX="0.25" scaleY="2.65000009536743" colour="4294967295" rotation="90"/>
     <instance objName="Terminal_Obj" x="1048" y="300" name="inst_0889AF2B" locked="0" code="" scaleX="0.25" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
     <instance objName="Terminal_Obj" x="1048" y="456" name="inst_DC88399C" locked="0" code="" scaleX="0.25" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
     <instance objName="Terminal_Obj" x="1248" y="296" name="inst_1D181F9F" locked="0" code="" scaleX="0.25" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="1052" y="384" name="inst_C4FC7572" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="1168" y="736" name="inst_5D2E57AB" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="436" y="412" name="inst_FAAFAE58" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="864" y="564" name="inst_54A7235D" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="16" y="736" name="inst_E9C603C9" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="1060" y="388" name="inst_C4FC7572" locked="0" code="lookDirectionLow = 270;&#xA;lookDirectionHigh = 450;&#xA;direction = lookDirectionLow;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="1176" y="744" name="inst_5D2E57AB" locked="0" code="lookDirectionLow = 90;&#xA;lookDirectionHigh = 180;&#xA;direction = lookDirectionLow;&#xA;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="444" y="420" name="inst_FAAFAE58" locked="0" code="lookDirectionLow = 180;&#xA;lookDirectionHigh = 270;&#xA;direction = lookDirectionLow;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="872" y="572" name="inst_54A7235D" locked="0" code="lookDirectionLow = 180;&#xA;lookDirectionHigh = 270;&#xA;direction = lookDirectionLow;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="24" y="744" name="inst_E9C603C9" locked="0" code="lookDirectionLow = 0;&#xA;lookDirectionHigh = 90;&#xA;direction = lookDirectionLow;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="520" y="248" name="inst_8B4E1AB4" locked="0" code="path_start(Level1_Path1, 4, 2, true);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="852" y="244" name="inst_4587858F" locked="0" code="path_start(Level1_Path2, 3, 2, true);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="playerObject" x="1292" y="60" name="inst_E3D8D7FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

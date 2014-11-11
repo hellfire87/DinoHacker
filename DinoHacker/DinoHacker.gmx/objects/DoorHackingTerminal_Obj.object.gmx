@@ -54,7 +54,17 @@ var terminalHackingObject;
     
     doorInstanceID = string_replace(instance_id, "DoorTerminal", "LockedDoor");
     doorToUnlock = instance_find(LockedDoor_Obj, doorInstanceID);
+    var newDoorX = doorToUnlock.x;
+    var newDoorY = doorToUnlock.y;
+    var newDoorXScale = doorToUnlock.image_xscale;
+    var newDoorYScale = doorToUnlock.image_yscale;
+    var newDoorRot = doorToUnlock.image_angle;
+    
     with(doorToUnlock) instance_destroy();
+    newDoor = instance_create(newDoorX,newDoorY, Door_Obj);
+    newDoor.image_xscale = newDoorXScale;
+    newDoor.image_yscale = newDoorYScale;
+    newDoor.image_angle = newDoorRot;
 }
 </string>
           </argument>

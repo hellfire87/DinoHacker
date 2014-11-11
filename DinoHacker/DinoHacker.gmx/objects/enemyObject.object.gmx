@@ -30,6 +30,11 @@ isAlive = true;
 playerX = noone;
 playerY = noone;
 lastPosition = noone;
+isAlert = false;
+isReturning = false;
+enemyPath = noone;
+
+mp_potential_settings(90, 45, 10, true);
 </string>
           </argument>
         </arguments>
@@ -52,7 +57,11 @@ lastPosition = noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>isReturning = true;
+isAlert = false;
+playerX = noone;
+playerY = noone;
+</string>
           </argument>
         </arguments>
       </action>
@@ -74,7 +83,8 @@ lastPosition = noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var distanceToPlayer = distance_to_object(playerObject);
+            <string>//Check for Player in sight
+var distanceToPlayer = distance_to_object(playerObject);
 if (isAlive &amp;&amp; distanceToPlayer &lt; 150) {
   var playerDirection = point_direction(x,y,playerObject.x,playerObject.y);
   var enemyDirection = direction;
@@ -95,11 +105,13 @@ if (isAlive &amp;&amp; distanceToPlayer &lt; 150) {
   }  
 } 
 
+//Noise check
 if (isAlive &amp;&amp; distanceToPlayer &lt; 25 &amp;&amp; playerObject.noiseMove) {
     with (playerObject) instance_destroy();
     room_restart();
 }
 
+//Handle enemy sprite
 if (!isAlive) {
     sprite_index = enemyDead;
     path_end();
@@ -116,8 +128,31 @@ if (!isAlive) {
     }
 }
 
+//Handle Alarm
+if (isAlive &amp;&amp; isAlert) {
+    if (lastPosition == noone) {
+        lastPosition = path_position;
+        path_end();
+    }
 
+    mp_potential_step(playerX, playerY, 5, false);
+}
 
+//Handle Return to path
+if (isAlive &amp;&amp; isReturning) {
+    returnX = path_get_x(enemyPath, lastPosition);
+    returnY = path_get_y(enemyPath, lastPosition);
+    if (returnX == x &amp;&amp; returnY == y) {
+        path_start(enemyPath, 3, 2, true);
+        path_position = lastPosition;
+        lastPosition = noone;
+        isReturning = false;
+        enemyPath = noone;
+    } else {
+        mp_potential_step(returnX, returnY, 3, false);
+        mp
+    }
+}
 </string>
           </argument>
         </arguments>
