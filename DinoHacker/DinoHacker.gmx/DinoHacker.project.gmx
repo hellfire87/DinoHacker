@@ -31,6 +31,10 @@
     <sprite>sprites\hazmatmovL</sprite>
     <sprite>sprites\Start_button</sprite>
     <sprite>sprites\Level_Select</sprite>
+    <sprite>sprites\TestW</sprite>
+    <sprite>sprites\Lvl1_Sprite</sprite>
+    <sprite>sprites\Lvl2_Sprite</sprite>
+    <sprite>sprites\MainMenu_Sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
@@ -60,6 +64,10 @@
     <object>objects\Turret_Obj</object>
     <object>objects\Start</object>
     <object>objects\LevelSelect</object>
+    <object>objects\TestWalls</object>
+    <object>objects\Lvl1_Button</object>
+    <object>objects\Lvl2_Button</object>
+    <object>objects\MainMenu_Button</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
