@@ -150,7 +150,6 @@ if (isAlive &amp;&amp; isReturning) {
         enemyPath = noone;
     } else {
         mp_potential_step(returnX, returnY, 3, false);
-        mp
     }
 }
 </string>
