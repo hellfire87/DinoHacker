@@ -29,8 +29,12 @@
     <sprite>sprites\boom_it_goes</sprite>
     <sprite>sprites\hazmat</sprite>
     <sprite>sprites\hazmatmovL</sprite>
+    <sprite>sprites\Start_button</sprite>
+    <sprite>sprites\Level_Select</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\MenuBackground</background>
+  </backgrounds>
   <paths name="paths">
     <path>paths\path1</path>
     <path>paths\path2</path>
@@ -54,12 +58,15 @@
     <object>objects\DoorHackingTerminal_Obj</object>
     <object>objects\Wall_Obj</object>
     <object>objects\Turret_Obj</object>
+    <object>objects\Start</object>
+    <object>objects\LevelSelect</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Menu</room>
     <room>rooms\room1</room>
     <room>rooms\room2</room>
     <room>rooms\testRoom</room>
-    <room>rooms\checkRoom</room>
+    <room>rooms\Level_Selecter</room>
   </rooms>
   <constants number="2">
     <constant name="GM_build_date">41940.2364871181</constant>
