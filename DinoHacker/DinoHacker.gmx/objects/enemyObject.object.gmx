@@ -27,6 +27,40 @@
             <kind>1</kind>
             <string>lastImageRotation = direction;
 isAlive = true;
+playerX = noone;
+playerY = noone;
+lastPosition = noone;
+isAlert = false;
+isReturning = false;
+enemyPath = noone;
+
+mp_potential_settings(90, 45, 10, true);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>isReturning = true;
+isAlert = false;
+playerX = noone;
+playerY = noone;
 </string>
           </argument>
         </arguments>
@@ -49,7 +83,8 @@ isAlive = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var distanceToPlayer = distance_to_object(playerObject);
+            <string>//Check for Player in sight
+var distanceToPlayer = distance_to_object(playerObject);
 if (isAlive &amp;&amp; distanceToPlayer &lt; 150) {
   var playerDirection = point_direction(x,y,playerObject.x,playerObject.y);
   var enemyDirection = direction;
@@ -61,18 +96,22 @@ if (isAlive &amp;&amp; distanceToPlayer &lt; 150) {
     playerDirection -= 360;
   }
   
-  var checkDirection = abs(enemyDirection - playerDirection);
-  if (checkDirection &lt; 22 &amp;&amp; collision_line(x,y,playerObject.x, playerObject.y,Wall_Obj, false, true) == noone) {
-    with (playerObject) instance_destroy();
+  checkDirection = abs(enemyDirection - playerDirection);
+  wallBetween = collision_line(x,y,playerObject.x, playerObject.y,Wall_Obj, false, true) == noone;
+  doorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
+  lockedDoorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
+  if (checkDirection &lt; 22 &amp;&amp; wallBetween &amp;&amp; doorBetween &amp;&amp; lockedDoorBetween) {
     room_restart();
   }  
 } 
 
+//Noise check
 if (isAlive &amp;&amp; distanceToPlayer &lt; 25 &amp;&amp; playerObject.noiseMove) {
     with (playerObject) instance_destroy();
     room_restart();
 }
 
+//Handle enemy sprite
 if (!isAlive) {
     sprite_index = enemyDead;
     path_end();
@@ -89,8 +128,31 @@ if (!isAlive) {
     }
 }
 
+//Handle Alarm
+if (isAlive &amp;&amp; isAlert) {
+    if (lastPosition == noone) {
+        lastPosition = path_position;
+        path_end();
+    }
 
+    mp_potential_step(playerX, playerY, 5, false);
+}
 
+//Handle Return to path
+if (isAlive &amp;&amp; isReturning) {
+    returnX = path_get_x(enemyPath, lastPosition);
+    returnY = path_get_y(enemyPath, lastPosition);
+    if (returnX == x &amp;&amp; returnY == y) {
+        path_start(enemyPath, 3, 2, true);
+        path_position = lastPosition;
+        lastPosition = noone;
+        isReturning = false;
+        enemyPath = noone;
+    } else {
+        mp_potential_step(returnX, returnY, 3, false);
+        mp
+    }
+}
 </string>
           </argument>
         </arguments>
