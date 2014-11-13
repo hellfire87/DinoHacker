@@ -109,7 +109,7 @@
     <instance objName="Terminal_Obj" x="1048" y="300" name="inst_0889AF2B" locked="0" code="" scaleX="0.25" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
     <instance objName="Terminal_Obj" x="1048" y="456" name="inst_DC88399C" locked="0" code="" scaleX="0.25" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
     <instance objName="Terminal_Obj" x="1248" y="296" name="inst_1D181F9F" locked="0" code="" scaleX="0.25" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="1060" y="388" name="inst_C4FC7572" locked="0" code="lookDirectionLow = 270;&#xA;lookDirectionHigh = 450;&#xA;direction = lookDirectionLow;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="1060" y="388" name="inst_C4FC7572" locked="0" code="lookDirectionLow = 270;&#xA;lookDirectionHigh = 90;&#xA;direction = lookDirectionLow;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Camera_Obj" x="1176" y="744" name="inst_5D2E57AB" locked="0" code="lookDirectionLow = 90;&#xA;lookDirectionHigh = 180;&#xA;direction = lookDirectionLow;&#xA;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Camera_Obj" x="444" y="420" name="inst_FAAFAE58" locked="0" code="lookDirectionLow = 180;&#xA;lookDirectionHigh = 270;&#xA;direction = lookDirectionLow;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Camera_Obj" x="872" y="572" name="inst_54A7235D" locked="0" code="lookDirectionLow = 180;&#xA;lookDirectionHigh = 270;&#xA;direction = lookDirectionLow;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>

@@ -36,6 +36,9 @@
     <sprite>sprites\Lvl2_Sprite</sprite>
     <sprite>sprites\MainMenu_Sprite</sprite>
     <sprite>sprites\DoorTerminal_Sprite</sprite>
+    <sprite>sprites\EnemySightCone_Sprite</sprite>
+    <sprite>sprites\CameraSightCone_Sprite</sprite>
+    <sprite>sprites\CameraTerminal_Sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
@@ -56,11 +59,14 @@
     <object>objects\playerObject</object>
     <object>objects\enemyObject</object>
     <object>objects\hackingObject</object>
+    <object>objects\CameraHacking_Obj</object>
+    <object>objects\DoorHacking_Obj</object>
     <object>objects\Camera_Obj</object>
     <object>objects\Door_Obj</object>
     <object>objects\LockedDoor_Obj</object>
     <object>objects\Terminal_Obj</object>
     <object>objects\DoorHackingTerminal_Obj</object>
+    <object>objects\CameraTerminal_Obj</object>
     <object>objects\Wall_Obj</object>
     <object>objects\Turret_Obj</object>
     <object>objects\Start</object>
@@ -78,7 +84,7 @@
     <room>rooms\Level_Selecter</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41956.1677725231</constant>
+    <constant name="GM_build_date">41956.3861388542</constant>
     <constant name="GM_version">'100'</constant>
   </constants>
   <help>

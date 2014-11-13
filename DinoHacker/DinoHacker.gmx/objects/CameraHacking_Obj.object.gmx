@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>-2</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>hackingObject</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -156,7 +156,8 @@ draw_text_transformed_colour(x + 138, y + 10, string(prime4), 2,2, 0, c_green, c
 
 currentGuess = prime1*prime2*prime3*prime4;
 if (currentGuess == answer) {
-    solved = true;
+    terminal = instance_find(CameraTerminal_Obj, terminalInstance);
+    with(terminal) hacked = true;
 }
 </string>
           </argument>
@@ -276,7 +277,8 @@ if (currentGuess == answer) {
 
 currentGuess = prime1*prime2*prime3*prime4;
 if (currentGuess == answer) {
-    
+    terminal = instance_find(CameraTerminal_Obj, terminalInstance);
+    with(terminal) hacked = true;
 }
 </string>
           </argument>
