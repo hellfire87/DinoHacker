@@ -71,8 +71,8 @@
     <object>objects\MainMenu_Button</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
     <room>rooms\Menu</room>
+    <room>rooms\room1</room>
     <room>rooms\room2</room>
     <room>rooms\testRoom</room>
     <room>rooms\Level_Selecter</room>
