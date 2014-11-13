@@ -91,7 +91,7 @@ hackingActionComplete = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(hackingObject) &amp;&amp; distance_to_object(playerObject) &lt; 10 &amp;&amp; !hacked) {
+            <string>if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj) &amp;&amp; distance_to_object(playerObject) &lt; 10 &amp;&amp; !hacked) {
     instance_create(view_wview[0]/2 + view_xview[0], view_yview[0] + view_hview[0] - 100, DoorHacking_Obj);
     DoorHacking_Obj.terminalInstance = instance_id;
 }

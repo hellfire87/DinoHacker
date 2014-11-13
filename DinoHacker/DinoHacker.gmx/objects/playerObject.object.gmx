@@ -101,7 +101,7 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(hackingObject)) {
+            <string>if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj)) {
     y += runSpeed;
 }
 </string>
@@ -126,7 +126,7 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(hackingObject)) {
+            <string>if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj)) {
     x += runSpeed;
 }
 </string>
@@ -151,7 +151,7 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(hackingObject)) {
+            <string>if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj)) {
     y -= runSpeed;
 }
 </string>
@@ -176,7 +176,7 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(hackingObject)) {
+            <string>if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj)) {
     x -= runSpeed;
 }
 </string>
@@ -201,7 +201,7 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(hackingObject)) {
+            <string>if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj)) {
     enemyToCheck = instance_nearest(x,y,enemyObject); 
     if (distance_to_object(enemyToCheck) &lt; 10) {
         enemyToCheck.isAlive = false;
@@ -231,7 +231,7 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(hackingObject)) {
+            <string>if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj)) {
     runSpeed = 4;
     noiseMove = false;
 }
@@ -257,7 +257,7 @@ noiseMove = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!instance_exists(hackingObject)) {
+            <string>if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj)) {
     runSpeed = 8;
     noiseMove = true;
 }

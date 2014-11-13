@@ -6,7 +6,12 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\playerSprite</sprite>
+    <sprite>sprites\boom_it_goes</sprite>
+    <sprite>sprites\camera_png</sprite>
+    <sprite>sprites\CameraSightCone_Sprite</sprite>
+    <sprite>sprites\CameraTerminal_Sprite</sprite>
+    <sprite>sprites\Doors</sprite>
+    <sprite>sprites\DoorTerminal_Sprite</sprite>
     <sprites name="enemyGroup">
       <sprite>sprites\enemyLeft</sprite>
       <sprite>sprites\enemyUp</sprite>
@@ -14,31 +19,32 @@
       <sprite>sprites\enemyDown</sprite>
       <sprite>sprites\enemyDead</sprite>
     </sprites>
-    <sprite>sprites\Turret</sprite>
-    <sprite>sprites\Doors</sprite>
-    <sprite>sprites\LockedDoor</sprite>
-    <sprite>sprites\Terminal</sprite>
-    <sprite>sprites\Walls</sprite>
+    <sprite>sprites\EnemySightCone_Sprite</sprite>
     <sprites name="HackingSprites">
       <sprite>sprites\hackingSpritePrime1</sprite>
       <sprite>sprites\hackingSpritePrime2</sprite>
       <sprite>sprites\hackingSpritePrime3</sprite>
       <sprite>sprites\hackingSpritePrime4</sprite>
     </sprites>
-    <sprite>sprites\camera_png</sprite>
-    <sprite>sprites\boom_it_goes</sprite>
     <sprite>sprites\hazmat</sprite>
     <sprite>sprites\hazmatmovL</sprite>
-    <sprite>sprites\Start_button</sprite>
     <sprite>sprites\Level_Select</sprite>
-    <sprite>sprites\TestW</sprite>
+    <sprite>sprites\LockedDoor</sprite>
     <sprite>sprites\Lvl1_Sprite</sprite>
     <sprite>sprites\Lvl2_Sprite</sprite>
     <sprite>sprites\MainMenu_Sprite</sprite>
-    <sprite>sprites\DoorTerminal_Sprite</sprite>
-    <sprite>sprites\EnemySightCone_Sprite</sprite>
-    <sprite>sprites\CameraSightCone_Sprite</sprite>
-    <sprite>sprites\CameraTerminal_Sprite</sprite>
+    <sprite>sprites\playerSprite</sprite>
+    <sprites name="robotGroup">
+      <sprite>sprites\robotRight</sprite>
+      <sprite>sprites\robotLeft</sprite>
+      <sprite>sprites\robotUp</sprite>
+      <sprite>sprites\robotDown</sprite>
+    </sprites>
+    <sprite>sprites\Start_button</sprite>
+    <sprite>sprites\Terminal</sprite>
+    <sprite>sprites\TestW</sprite>
+    <sprite>sprites\Turret</sprite>
+    <sprite>sprites\Walls</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
@@ -56,25 +62,26 @@
     <path>paths\Level2_Path3</path>
   </paths>
   <objects name="objects">
-    <object>objects\playerObject</object>
-    <object>objects\enemyObject</object>
-    <object>objects\hackingObject</object>
-    <object>objects\CameraHacking_Obj</object>
-    <object>objects\DoorHacking_Obj</object>
     <object>objects\Camera_Obj</object>
-    <object>objects\Door_Obj</object>
-    <object>objects\LockedDoor_Obj</object>
-    <object>objects\Terminal_Obj</object>
-    <object>objects\DoorHackingTerminal_Obj</object>
+    <object>objects\CameraHacking_Obj</object>
     <object>objects\CameraTerminal_Obj</object>
-    <object>objects\Wall_Obj</object>
-    <object>objects\Turret_Obj</object>
-    <object>objects\Start</object>
+    <object>objects\Door_Obj</object>
+    <object>objects\DoorHacking_Obj</object>
+    <object>objects\DoorHackingTerminal_Obj</object>
+    <object>objects\enemyObject</object>
+    <object>objects\Robot_Obj</object>
+    <object>objects\hackingObject</object>
     <object>objects\LevelSelect</object>
-    <object>objects\TestWalls</object>
+    <object>objects\LockedDoor_Obj</object>
     <object>objects\Lvl1_Button</object>
     <object>objects\Lvl2_Button</object>
     <object>objects\MainMenu_Button</object>
+    <object>objects\playerObject</object>
+    <object>objects\Start</object>
+    <object>objects\Terminal_Obj</object>
+    <object>objects\TestWalls</object>
+    <object>objects\Turret_Obj</object>
+    <object>objects\Wall_Obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
