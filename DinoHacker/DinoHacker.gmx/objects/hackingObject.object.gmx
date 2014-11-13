@@ -69,11 +69,11 @@ selectedPrime = "1";
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text_transformed_colour(x +  50, y - 50, string(answer), 2,2, 0, c_red, c_red,c_red,c_red,1);
-draw_text_transformed_colour(x - 150, y + 25, string(prime1), 2,2, 0, c_green, c_green,c_green,c_green,1);
-draw_text_transformed_colour(x -  55, y + 25, string(prime2), 2,2, 0, c_green, c_green,c_green,c_green,1);
-draw_text_transformed_colour(x +  45, y + 25, string(prime3), 2,2, 0, c_green, c_green,c_green,c_green,1);
-draw_text_transformed_colour(x + 145, y + 25, string(prime4), 2,2, 0, c_green, c_green,c_green,c_green,1);
+            <string>draw_text_transformed_colour(x +  43, y - 65, string(answer), 2,2, 0, c_red, c_red,c_red,c_red,1);
+draw_text_transformed_colour(x - 157, y + 10, string(prime1), 2,2, 0, c_green, c_green,c_green,c_green,1);
+draw_text_transformed_colour(x -  62, y + 10, string(prime2), 2,2, 0, c_green, c_green,c_green,c_green,1);
+draw_text_transformed_colour(x +  38, y + 10, string(prime3), 2,2, 0, c_green, c_green,c_green,c_green,1);
+draw_text_transformed_colour(x + 138, y + 10, string(prime4), 2,2, 0, c_green, c_green,c_green,c_green,1);
 </string>
           </argument>
         </arguments>
@@ -316,6 +316,22 @@ if (currentGuess == answer) {
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>203</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_kill_object</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>

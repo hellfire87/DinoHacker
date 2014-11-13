@@ -35,6 +35,7 @@
     <sprite>sprites\Lvl1_Sprite</sprite>
     <sprite>sprites\Lvl2_Sprite</sprite>
     <sprite>sprites\MainMenu_Sprite</sprite>
+    <sprite>sprites\DoorTerminal_Sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
@@ -70,14 +71,14 @@
     <object>objects\MainMenu_Button</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Menu</room>
     <room>rooms\room1</room>
+    <room>rooms\Menu</room>
     <room>rooms\room2</room>
     <room>rooms\testRoom</room>
     <room>rooms\Level_Selecter</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41955.2819589236</constant>
+    <constant name="GM_build_date">41956.1677725231</constant>
     <constant name="GM_version">'100'</constant>
   </constants>
   <help>
