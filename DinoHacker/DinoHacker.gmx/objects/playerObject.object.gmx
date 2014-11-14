@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>runSpeed = 8;
 noiseMove = true;
+paused = false;
 
 globalvar grid;
 grid = mp_grid_create(0,0,room_width/32,room_height/32, 32,32);
@@ -215,6 +216,35 @@ mp_grid_add_instances(grid, LockedDoor_Obj, true);
 }
 
 
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/*if (!paused) {
+    paused = true;
+    instance_deactivate_all(true);
+} else {
+    paused = true;
+    instance_activate_all();
+}*/
 </string>
           </argument>
         </arguments>
