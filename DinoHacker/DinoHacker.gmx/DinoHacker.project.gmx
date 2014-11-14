@@ -64,6 +64,7 @@
   </paths>
   <objects name="objects">
     <object>objects\Camera_Obj</object>
+    <object>objects\Turret_Obj</object>
     <object>objects\CameraHacking_Obj</object>
     <object>objects\CameraTerminal_Obj</object>
     <object>objects\Door_Obj</object>
@@ -81,7 +82,6 @@
     <object>objects\Start</object>
     <object>objects\Terminal_Obj</object>
     <object>objects\TestWalls</object>
-    <object>objects\Turret_Obj</object>
     <object>objects\Wall_Obj</object>
   </objects>
   <rooms name="rooms">

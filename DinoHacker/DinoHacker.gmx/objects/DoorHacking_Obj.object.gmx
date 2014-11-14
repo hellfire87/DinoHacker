@@ -156,7 +156,7 @@ draw_text_transformed_colour(x + 138, y + 10, string(prime4), 2,2, 0, c_green, c
 
 currentGuess = prime1*prime2*prime3*prime4;
 if (currentGuess == answer) {
-    terminal.hacked = true;
+    terminalInstance.hacked = true;
 }
 </string>
           </argument>
@@ -276,7 +276,7 @@ if (currentGuess == answer) {
 
 currentGuess = prime1*prime2*prime3*prime4;
 if (currentGuess == answer) {
-    terminal.hacked = true;
+    terminalInstance.hacked = true;
 }
 </string>
           </argument>
