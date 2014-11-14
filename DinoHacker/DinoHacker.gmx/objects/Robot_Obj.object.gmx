@@ -146,7 +146,7 @@ if (abs(lastImageRotation - direction) &gt;= 1)  {
           <argument>
             <kind>1</kind>
             <string>if (isAlive ) {
-    draw_sprite_ext(EnemySightCone_Sprite,0,x,y,1,1,direction,c_white,1);
+    draw_sprite_ext(RobotSightCone_Sprite,0,x,y,1,1,direction,c_white,1);
 }
 </string>
           </argument>

@@ -27,8 +27,9 @@
             <kind>1</kind>
             <string>distToPlayer = distance_to_object(playerObject);
 distToEnemy = distance_to_object(enemyObject);
+distToRobot = distance_to_object(Robot_Obj);
 
-if (distToPlayer &lt; 30 || distToEnemy &lt; 30) {
+if (distToPlayer &lt; 30 || distToEnemy &lt; 30 || distToRobot &lt; 30) {
   if (visible == true) {
     visible = false;
   }

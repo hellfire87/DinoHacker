@@ -45,6 +45,7 @@
     <sprite>sprites\TestW</sprite>
     <sprite>sprites\Turret</sprite>
     <sprite>sprites\Walls</sprite>
+    <sprite>sprites\RobotSightCone_Sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>

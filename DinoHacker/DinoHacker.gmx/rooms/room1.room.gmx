@@ -56,7 +56,7 @@
     <instance objName="Wall_Obj" x="0" y="0" name="inst_3AB3F7AF" locked="0" code="" scaleX="42" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Obj" x="4" y="752" name="inst_857A3BC8" locked="0" code="" scaleX="42" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Obj" x="1236" y="0" name="inst_2B6B74C8" locked="0" code="" scaleX="0.5" scaleY="11" colour="4294967295" rotation="0"/>
-    <instance objName="enemyObject" x="684" y="72" name="inst_7D0868FC" locked="0" code="enemyPath = Level1_Path3;&#xA;path_start(enemyPath, 3, 2, true);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="enemyObject" x="176" y="716" name="inst_9D5EFA7B" locked="0" code="enemyPath = Level1_Path5;&#xA;path_start(enemyPath, 3, 2, true);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Obj" x="1036" y="260" name="inst_0F2A7527" locked="0" code="" scaleX="1.62999999523163" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Obj" x="1036" y="504" name="inst_D78395EE" locked="0" code="" scaleX="1.62999999523163" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Obj" x="1036" y="260" name="inst_C9D2C4B8" locked="0" code="" scaleX="0.5" scaleY="8.10000038146973" colour="4294967295" rotation="0"/>
@@ -118,7 +118,7 @@
     <instance objName="enemyObject" x="852" y="244" name="inst_4587858F" locked="0" code="enemyPath = Level1_Path2;&#xA;path_start(enemyPath, 3, 2, true);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="playerObject" x="1292" y="60" name="inst_E3D8D7FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="1000" y="620" name="inst_EBC9B3E1" locked="0" code="enemyPath = Level1_Path4;&#xA;path_start(enemyPath, 3, 2, true);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="enemyObject" x="176" y="716" name="inst_9D5EFA7B" locked="0" code="enemyPath = Level1_Path5;&#xA;path_start(enemyPath, 3, 2, true);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Robot_Obj" x="660" y="60" name="inst_41DE383D" locked="0" code="enemyPath = Level1_Path3;&#xA;path_start(enemyPath, 3, 2, true);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
