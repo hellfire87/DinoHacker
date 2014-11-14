@@ -81,7 +81,7 @@
     <object>objects\playerObject</object>
     <object>objects\Start</object>
     <object>objects\Terminal_Obj</object>
-    <object>objects\TestWalls</object>
+    <object>objects\LevelEnd_Obj</object>
     <object>objects\Wall_Obj</object>
   </objects>
   <rooms name="rooms">
