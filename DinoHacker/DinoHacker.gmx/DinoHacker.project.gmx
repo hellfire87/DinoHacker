@@ -49,6 +49,7 @@
     <sprite>sprites\Lvl1_Changed</sprite>
     <sprite>sprites\Lvl2_Changed</sprite>
     <sprite>sprites\Button_Changed</sprite>
+    <sprite>sprites\LvlSelect_Title</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
@@ -87,13 +88,15 @@
     <object>objects\Terminal_Obj</object>
     <object>objects\LevelEnd_Obj</object>
     <object>objects\Wall_Obj</object>
+    <object>objects\LS_Title</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
     <room>rooms\room1</room>
     <room>rooms\room2</room>
-    <room>rooms\testRoom</room>
+    <room>rooms\room3</room>
     <room>rooms\Level_Selecter</room>
+    <room>rooms\testRoom</room>
   </rooms>
   <constants number="2">
     <constant name="GM_build_date">41956.3861388542</constant>
