@@ -46,9 +46,13 @@
     <sprite>sprites\Turret</sprite>
     <sprite>sprites\Walls</sprite>
     <sprite>sprites\RobotSightCone_Sprite</sprite>
+    <sprite>sprites\Lvl1_Changed</sprite>
+    <sprite>sprites\Lvl2_Changed</sprite>
+    <sprite>sprites\Button_Changed</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
+    <background>background\LS_Background</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path1</path>
