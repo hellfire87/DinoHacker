@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>runSpeed = 8;
 noiseMove = true;
+pausable = true;
 paused = false;
 
 globalvar grid;

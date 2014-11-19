@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>terminalInstance = noone;
+            <string>pausable = true;
+paused = false;
+terminalInstance = noone;
 
 prime1 = 1;
 prime2 = 1;

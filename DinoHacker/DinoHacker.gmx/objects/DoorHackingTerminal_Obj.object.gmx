@@ -28,6 +28,8 @@
             <string>doorToOpen = "";
 hacked = false;
 hackingActionComplete = false;
+pausable = true;
+paused = false;
 </string>
           </argument>
         </arguments>

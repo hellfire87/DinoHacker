@@ -33,6 +33,8 @@ lastPosition = noone;
 isAlert = false;
 isReturning = false;
 enemyPath = noone;
+pausable = true;
+paused = false;
 </string>
           </argument>
         </arguments>

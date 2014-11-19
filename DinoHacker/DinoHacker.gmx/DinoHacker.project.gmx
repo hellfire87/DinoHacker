@@ -89,6 +89,7 @@
     <object>objects\LevelEnd_Obj</object>
     <object>objects\Wall_Obj</object>
     <object>objects\LS_Title</object>
+    <object>objects\Pause_Obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>

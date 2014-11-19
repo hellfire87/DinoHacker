@@ -30,6 +30,8 @@ lookDirectionLow = 0;
 lookDirectionHigh = 0;
 goingTowardsHigh = true;
 image_speed = 0;
+pausable = true;
+paused = false;
 </string>
           </argument>
         </arguments>
