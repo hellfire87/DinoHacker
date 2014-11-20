@@ -54,7 +54,9 @@ paused = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//camera look code
+            <string>if (paused) exit;
+
+//camera look code
 if(alive) {
     isMixed = lookDirectionLow &gt; lookDirectionHigh;
     

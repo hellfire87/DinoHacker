@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\boom_it_goes</sprite>
+    <sprite>sprites\Button_Changed</sprite>
     <sprite>sprites\camera_png</sprite>
     <sprite>sprites\CameraSightCone_Sprite</sprite>
     <sprite>sprites\CameraTerminal_Sprite</sprite>
@@ -30,8 +31,11 @@
     <sprite>sprites\hazmatmovL</sprite>
     <sprite>sprites\Level_Select</sprite>
     <sprite>sprites\LockedDoor</sprite>
+    <sprite>sprites\Lvl1_Changed</sprite>
     <sprite>sprites\Lvl1_Sprite</sprite>
+    <sprite>sprites\Lvl2_Changed</sprite>
     <sprite>sprites\Lvl2_Sprite</sprite>
+    <sprite>sprites\LvlSelect_Title</sprite>
     <sprite>sprites\MainMenu_Sprite</sprite>
     <sprite>sprites\playerSprite</sprite>
     <sprites name="robotGroup">
@@ -40,16 +44,12 @@
       <sprite>sprites\robotUp</sprite>
       <sprite>sprites\robotDown</sprite>
     </sprites>
+    <sprite>sprites\RobotSightCone_Sprite</sprite>
     <sprite>sprites\Start_button</sprite>
     <sprite>sprites\Terminal</sprite>
     <sprite>sprites\TestW</sprite>
     <sprite>sprites\Turret</sprite>
     <sprite>sprites\Walls</sprite>
-    <sprite>sprites\RobotSightCone_Sprite</sprite>
-    <sprite>sprites\Lvl1_Changed</sprite>
-    <sprite>sprites\Lvl2_Changed</sprite>
-    <sprite>sprites\Button_Changed</sprite>
-    <sprite>sprites\LvlSelect_Title</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
@@ -69,27 +69,27 @@
   </paths>
   <objects name="objects">
     <object>objects\Camera_Obj</object>
-    <object>objects\Turret_Obj</object>
     <object>objects\CameraHacking_Obj</object>
     <object>objects\CameraTerminal_Obj</object>
     <object>objects\Door_Obj</object>
     <object>objects\DoorHacking_Obj</object>
     <object>objects\DoorHackingTerminal_Obj</object>
     <object>objects\enemyObject</object>
-    <object>objects\Robot_Obj</object>
     <object>objects\hackingObject</object>
+    <object>objects\LevelEnd_Obj</object>
     <object>objects\LevelSelect</object>
     <object>objects\LockedDoor_Obj</object>
+    <object>objects\LS_Title</object>
     <object>objects\Lvl1_Button</object>
     <object>objects\Lvl2_Button</object>
     <object>objects\MainMenu_Button</object>
+    <object>objects\Pause_Obj</object>
     <object>objects\playerObject</object>
+    <object>objects\Robot_Obj</object>
     <object>objects\Start</object>
     <object>objects\Terminal_Obj</object>
-    <object>objects\LevelEnd_Obj</object>
+    <object>objects\Turret_Obj</object>
     <object>objects\Wall_Obj</object>
-    <object>objects\LS_Title</object>
-    <object>objects\Pause_Obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
@@ -100,7 +100,7 @@
     <room>rooms\testRoom</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41956.3861388542</constant>
+    <constant name="GM_build_date">41963.1929410185</constant>
     <constant name="GM_version">'100'</constant>
   </constants>
   <help>

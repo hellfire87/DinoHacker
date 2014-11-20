@@ -52,7 +52,9 @@ paused = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (hacked &amp;&amp; !hackingActionComplete) {
+            <string>if (paused) exit;
+
+if (hacked &amp;&amp; !hackingActionComplete) {
     with(DoorHacking_Obj) instance_destroy();
     
     doorInstanceID = string_replace(id, "DoorTerminal", "LockedDoor");

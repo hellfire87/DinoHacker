@@ -83,7 +83,9 @@ playerY = noone;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Check for Player in sight
+            <string>if (paused) exit;
+
+//Check for Player in sight
 var distanceToPlayer = distance_to_object(playerObject);
 if (isAlive &amp;&amp; distanceToPlayer &lt; 150) {
   var playerDirection = point_direction(x,y,playerObject.x,playerObject.y);
