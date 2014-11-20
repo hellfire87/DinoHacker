@@ -35,6 +35,8 @@ isReturning = false;
 enemyPath = noone;
 pausable = true;
 paused = false;
+beingHacked = false;
+hacked = false;
 </string>
           </argument>
         </arguments>
@@ -60,25 +62,52 @@ paused = false;
             <string>if (paused) exit;
 
 //Check for Player in sight
-var distanceToPlayer = distance_to_object(playerObject);
-if (isAlive &amp;&amp; distanceToPlayer &lt; 150) {
-  var playerDirection = point_direction(x,y,playerObject.x,playerObject.y);
-  var enemyDirection = direction;
+if (hacked) {
+    var i;
+    for (i = 0; i &lt; instance_number(enemyObject); i+= 1) {
+        enemyToFind = instance_find(enemyObject, i);
+        var distanceToEnemy = distance_to_point(enemyToFind.x, enemyToFind.y);
+        if (distanceToEnemy &lt; 150) {
+            var enemyDirection = point_direction(x,y,enemyToFind.x,enemyToFind.y);
+            var robotDirection = direction;
   
-  if (enemyDirection &gt;= (360-45)) {
-    enemyDirection -= 360;
-  }
-  if (playerDirection &gt;= (360-45)) {
-    playerDirection -= 360;
-  }
+            if (robotDirection &gt;= (360-45)) {
+                robotDirection -= 360;
+            }
+            if (enemyDirection &gt;= (360-45)) {
+                enemyDirection -= 360;
+            }
   
-  checkDirection = abs(enemyDirection - playerDirection);
-  wallBetween = collision_line(x,y,playerObject.x, playerObject.y,Wall_Obj, false, true) == noone;
-  doorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
-  lockedDoorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
-  if (checkDirection &lt; 45 &amp;&amp; wallBetween &amp;&amp; doorBetween &amp;&amp; lockedDoorBetween) {
-    room_restart();
-  }  
+            checkDirection = abs(robotDirection - enemyDirection);
+            wallBetween = collision_line(x,y,enemyDirection.x, enemyDirection.y,Wall_Obj, false, true) == noone;
+            doorBetween = collision_line(x,y,enemyDirection.x, enemyDirection.y,Door_Obj, false, true) == noone;
+            lockedDoorBetween = collision_line(x,y,enemyDirection.x, enemyDirection.y,LockedDoor_Obj, false, true) == noone;
+            if (checkDirection &lt; 45 &amp;&amp; wallBetween &amp;&amp; doorBetween &amp;&amp; lockedDoorBetween) {
+                room_restart();
+            }  
+        }
+    }    
+} else {
+    var distanceToPlayer = distance_to_object(playerObject);
+    if (distanceToPlayer &lt; 150) {
+        var playerDirection = point_direction(x,y,playerObject.x,playerObject.y);
+        var robotDirection = direction;
+  
+        if (robotDirection &gt;= (360-45)) {
+            robotDirection -= 360;
+        }
+        if (playerDirection &gt;= (360-45)) {
+            playerDirection -= 360;
+        }
+  
+        checkDirection = abs(robotDirection - playerDirection);
+        wallBetween = collision_line(x,y,playerObject.x, playerObject.y,Wall_Obj, false, true) == noone;
+        doorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
+        lockedDoorBetween = collision_line(x,y,playerObject.x, playerObject.y,LockedDoor_Obj, false, true) == noone;
+        if (checkDirection &lt; 45 &amp;&amp; wallBetween &amp;&amp; doorBetween &amp;&amp; lockedDoorBetween) {
+            room_restart();
+        }  
+    }
 }
 
 //Handle enemy sprite
@@ -94,39 +123,6 @@ if (abs(lastImageRotation - direction) &gt;= 1)  {
         sprite_index = robotDown;
     }
 }
-
-//Handle Alarm
-/*if (isAlive &amp;&amp; isAlert) {
-    if (lastPosition == noone) {
-        lastPosition = path_position;
-        path_end();
-    }
-    
-    searchPath = path_add();
-    if (mp_grid_path(grid, searchPath, x, y, playerX, playerY, true)) {
-        path_start(searchPath, 5,0, 0);
-        isAlert = false;
-    }
-}*/
-
-//Handle Return to path
-/*if (isAlive &amp;&amp; isReturning) {
-    returnX = path_get_x(enemyPath, lastPosition);
-    returnY = path_get_y(enemyPath, lastPosition);
-    if (abs(x-returnX) &lt; 0.5 &amp;&amp; abs(y-returnY) &lt; 0.5) {
-        x = returnX;
-        y = returnY;
-        path_start(enemyPath, 3, 2, true);
-        path_position = lastPosition;
-        lastPosition = noone;
-        isReturning = false;
-    } else {
-        returnPath = path_add();
-        if (mp_grid_path(grid, returnPath, x, y, returnX, returnY, true)) {
-            path_start(returnPath, 5,0, 0);
-        }
-    }
-}*/
 </string>
           </argument>
         </arguments>
