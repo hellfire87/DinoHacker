@@ -9,9 +9,9 @@
   <speed>30</speed>
   <persistent>0</persistent>
   <colour>12632256</colour>
-  <showcolour>0</showcolour>
+  <showcolour>-1</showcolour>
   <code></code>
-  <enableViews>0</enableViews>
+  <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="playerObject" xview="0" yview="0" wview="819" hview="461" xport="0" yport="0" wport="1365" hport="768" hborder="300" vborder="200" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -77,18 +77,17 @@
     <instance objName="Door_Obj" x="152" y="652" name="inst_C82E592A" locked="0" code="" scaleX="0.25" scaleY="2.79999995231628" colour="4294967295" rotation="0"/>
     <instance objName="Door_Obj" x="236" y="336" name="inst_06F5C488" locked="0" code="" scaleX="0.25" scaleY="2.79999995231628" colour="4294967295" rotation="0"/>
     <instance objName="Door_Obj" x="828" y="124" name="inst_BC234187" locked="0" code="" scaleX="0.25" scaleY="2.79999995231628" colour="4294967295" rotation="0"/>
-    <instance objName="LockedDoor_Obj" x="1164" y="496" name="inst_17E5BCB8" locked="0" code="" scaleX="0.25" scaleY="3.09999990463257" colour="4294967295" rotation="0"/>
-    <instance objName="LockedDoor_Obj" x="628" y="496" name="inst_7F851422" locked="0" code="" scaleX="0.25" scaleY="3.09999990463257" colour="4294967295" rotation="0"/>
-    <instance objName="LockedDoor_Obj" x="68" y="444" name="inst_4155D924" locked="0" code="" scaleX="3.29999995231628" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="LockedDoor_Obj" x="1164" y="496" name="LockedDoor_1" locked="0" code="" scaleX="0.25" scaleY="3.09999990463257" colour="4294967295" rotation="0"/>
+    <instance objName="LockedDoor_Obj" x="628" y="496" name="LockedDoor_2" locked="0" code="" scaleX="0.25" scaleY="3.09999990463257" colour="4294967295" rotation="0"/>
+    <instance objName="LockedDoor_Obj" x="68" y="444" name="LockedDoor_3" locked="0" code="" scaleX="3.29999995231628" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="Door_Obj" x="1288" y="552" name="inst_3CAB78BC" locked="0" code="" scaleX="2.90000009536743" scaleY="0.25" colour="4294967295" rotation="0"/>
-    <instance objName="Terminal_Obj" x="16" y="632" name="inst_1082BE36" locked="0" code="" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Terminal_Obj" x="1028" y="416" name="inst_7BE5D7C0" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Terminal_Obj" x="448" y="16" name="inst_3C418E73" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="624" y="660" name="inst_F84A91F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="DoorHackingTerminal_Obj" x="0" y="640" name="DoorTerminal_1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="DoorHackingTerminal_Obj" x="1020" y="412" name="DoorTerminal_2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Camera_Obj" x="1196" y="660" name="inst_6EF95787" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Camera_Obj" x="312" y="660" name="inst_B9A05E70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Camera_Obj" x="872" y="660" name="inst_CBD0FF05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="624" y="660" name="inst_F84A91F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="436" y="496" name="inst_6580B05D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="DoorHackingTerminal_Obj" x="448" y="4" name="DoorTerminal_3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
