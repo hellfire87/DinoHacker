@@ -111,7 +111,7 @@ mp_grid_add_instances(grid, LockedDoor_Obj, true);
             <kind>1</kind>
             <string>if (paused) exit;
 
-if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj)) {
+if (!instance_exists(hackingObject)) {
     y += runSpeed;
 }
 </string>
@@ -138,7 +138,7 @@ if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_
             <kind>1</kind>
             <string>if (paused) exit;
 
-if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj)) {
+if (!instance_exists(hackingObject)) {
     x += runSpeed;
 }
 </string>
@@ -165,7 +165,7 @@ if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_
             <kind>1</kind>
             <string>if (paused) exit;
 
-if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj)) {
+if (!instance_exists(hackingObject)) {
     y -= runSpeed;
 }
 </string>
@@ -192,7 +192,7 @@ if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_
             <kind>1</kind>
             <string>if (paused) exit;
 
-if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj)) {
+if (!instance_exists(hackingObject)) {
     x -= runSpeed;
 }
 </string>
@@ -219,7 +219,7 @@ if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_
             <kind>1</kind>
             <string>if (paused) exit;
 
-if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj)) {
+if (!instance_exists(hackingObject)) {
     enemyToCheck = instance_nearest(x,y,enemyObject); 
     if (distance_to_object(enemyToCheck) &lt; 10) {
         enemyToCheck.isAlive = false;
@@ -251,7 +251,7 @@ if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_
             <kind>1</kind>
             <string>if (paused) exit;
 
-if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj)) {
+if (!instance_exists(hackingObject)) {
     runSpeed = 4;
     noiseMove = false;
 }
@@ -279,7 +279,7 @@ if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_
             <kind>1</kind>
             <string>if (paused) exit;
 
-if (!instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj)) {
+if (!instance_exists(hackingObject)) {
     runSpeed = 8;
     noiseMove = true;
 }

@@ -50,7 +50,7 @@ visible = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!paused &amp;&amp; !instance_exists(DoorHacking_Obj) &amp;&amp; !instance_exists(CameraHacking_Obj)) {
+            <string>if (!paused &amp;&amp; !instance_exists(hackingObject)) {
     if (keyboard_check_pressed(vk_escape)) {
         paused = true;
         visible = true;
@@ -76,7 +76,7 @@ visible = false;
             }
         }
     }
-} else if (keyboard_check_pressed(vk_escape)) {
+} else if (keyboard_check_pressed(vk_escape) &amp;&amp; !instance_exists(hackingObject)) {
     paused = false;
     visible = false;
     with (all) {

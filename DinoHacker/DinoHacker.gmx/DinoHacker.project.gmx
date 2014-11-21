@@ -69,10 +69,8 @@
   </paths>
   <objects name="objects">
     <object>objects\Camera_Obj</object>
-    <object>objects\CameraHacking_Obj</object>
     <object>objects\CameraTerminal_Obj</object>
     <object>objects\Door_Obj</object>
-    <object>objects\DoorHacking_Obj</object>
     <object>objects\DoorHackingTerminal_Obj</object>
     <object>objects\enemyObject</object>
     <object>objects\hackingObject</object>

@@ -26,16 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>lastImageRotation = direction;
-isAlive = true;
-playerX = noone;
-playerY = noone;
-lastPosition = noone;
-isAlert = false;
-isReturning = false;
-enemyPath = noone;
 pausable = true;
 paused = false;
 beingHacked = false;
+hackingActionCompleted = false;
 hacked = false;
 </string>
           </argument>
@@ -59,13 +53,21 @@ hacked = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (paused) exit;
+            <string>if (paused || (beingHacked &amp;&amp; !hacked)) exit;
 
 //Check for Player in sight
 if (hacked) {
+    if (!hackingActionCompleted) {
+        hackingActionCompleted = true;
+        beingHacked = false;
+        path_speed = 3;
+        
+        with(hackingObject) instance_destroy();
+    }
+
     var i;
     for (i = 0; i &lt; instance_number(enemyObject); i+= 1) {
-        enemyToFind = instance_find(enemyObject, i);
+        var enemyToFind = instance_find(enemyObject, i);
         var distanceToEnemy = distance_to_point(enemyToFind.x, enemyToFind.y);
         if (distanceToEnemy &lt; 150) {
             var enemyDirection = point_direction(x,y,enemyToFind.x,enemyToFind.y);
@@ -78,12 +80,12 @@ if (hacked) {
                 enemyDirection -= 360;
             }
   
-            checkDirection = abs(robotDirection - enemyDirection);
-            wallBetween = collision_line(x,y,enemyDirection.x, enemyDirection.y,Wall_Obj, false, true) == noone;
-            doorBetween = collision_line(x,y,enemyDirection.x, enemyDirection.y,Door_Obj, false, true) == noone;
-            lockedDoorBetween = collision_line(x,y,enemyDirection.x, enemyDirection.y,LockedDoor_Obj, false, true) == noone;
+            var checkDirection = abs(robotDirection - enemyDirection);
+            var wallBetween = collision_line(x,y,enemyToFind.x, enemyToFind.y,Wall_Obj, false, true) == noone;
+            var doorBetween = collision_line(x,y,enemyToFind.x, enemyToFind.y,Door_Obj, false, true) == noone;
+            var lockedDoorBetween = collision_line(x,y,enemyToFind.x, enemyToFind.y,LockedDoor_Obj, false, true) == noone;
             if (checkDirection &lt; 45 &amp;&amp; wallBetween &amp;&amp; doorBetween &amp;&amp; lockedDoorBetween) {
-                room_restart();
+                with(enemyToFind) isAlive = false;
             }  
         }
     }    
@@ -100,10 +102,10 @@ if (hacked) {
             playerDirection -= 360;
         }
   
-        checkDirection = abs(robotDirection - playerDirection);
-        wallBetween = collision_line(x,y,playerObject.x, playerObject.y,Wall_Obj, false, true) == noone;
-        doorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
-        lockedDoorBetween = collision_line(x,y,playerObject.x, playerObject.y,LockedDoor_Obj, false, true) == noone;
+        var checkDirection = abs(robotDirection - playerDirection);
+        var wallBetween = collision_line(x,y,playerObject.x, playerObject.y,Wall_Obj, false, true) == noone;
+        var doorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
+        var lockedDoorBetween = collision_line(x,y,playerObject.x, playerObject.y,LockedDoor_Obj, false, true) == noone;
         if (checkDirection &lt; 45 &amp;&amp; wallBetween &amp;&amp; doorBetween &amp;&amp; lockedDoorBetween) {
             room_restart();
         }  
@@ -128,6 +130,35 @@ if (abs(lastImageRotation - direction) &gt;= 1)  {
         </arguments>
       </action>
     </event>
+    <event eventtype="5" enumb="32">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if (!instance_exists(hackingObject) &amp;&amp; distance_to_object(playerObject) &lt; 10 &amp;&amp; !hacked) {
+    instance_create(view_wview[0]/2 + view_xview[0], view_yview[0] + view_hview[0] - 100, hackingObject);
+    hackingObject.terminalInstance = id;
+    
+    beingHacked = true;
+    path_speed = 0;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="8" enumb="73">
       <action>
         <libid>1</libid>
@@ -145,7 +176,7 @@ if (abs(lastImageRotation - direction) &gt;= 1)  {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (isAlive ) {
+            <string>if (!beingHacked ) {
     draw_sprite_ext(RobotSightCone_Sprite,0,x,y,1,1,direction,c_white,1);
 }
 </string>
