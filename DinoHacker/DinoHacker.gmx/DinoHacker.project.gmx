@@ -50,6 +50,10 @@
     <sprite>sprites\TestW</sprite>
     <sprite>sprites\Turret</sprite>
     <sprite>sprites\Walls</sprite>
+    <sprite>sprites\Lvl3_Sprite</sprite>
+    <sprite>sprites\Lvl3_Changed</sprite>
+    <sprite>sprites\Lvl4_Sprite</sprite>
+    <sprite>sprites\Lvl4_Changed</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
@@ -88,6 +92,7 @@
     <object>objects\Terminal_Obj</object>
     <object>objects\Turret_Obj</object>
     <object>objects\Wall_Obj</object>
+    <object>objects\Lvl3_Button</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
