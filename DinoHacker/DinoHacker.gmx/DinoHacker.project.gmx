@@ -60,8 +60,6 @@
     <background>background\LS_Background</background>
   </backgrounds>
   <paths name="paths">
-    <path>paths\path1</path>
-    <path>paths\path2</path>
     <path>paths\Level1_Path1</path>
     <path>paths\Level1_Path2</path>
     <path>paths\Level1_Path3</path>
@@ -70,6 +68,14 @@
     <path>paths\Level2_Path1</path>
     <path>paths\Level2_Path2</path>
     <path>paths\Level2_Path3</path>
+    <path>paths\Level2_Path4</path>
+    <path>paths\Level3_Path1</path>
+    <path>paths\Level3_Path2</path>
+    <path>paths\Level3_Path3</path>
+    <path>paths\Level3_Path4</path>
+    <path>paths\Level3_Path5</path>
+    <path>paths\Level3_Path6</path>
+    <path>paths\Level3_Path7</path>
   </paths>
   <objects name="objects">
     <object>objects\Camera_Obj</object>
