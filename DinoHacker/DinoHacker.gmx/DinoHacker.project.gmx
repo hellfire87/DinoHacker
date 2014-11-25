@@ -14,11 +14,11 @@
     <sprite>sprites\Doors</sprite>
     <sprite>sprites\DoorTerminal_Sprite</sprite>
     <sprites name="enemyGroup">
-      <sprite>sprites\enemyLeft</sprite>
-      <sprite>sprites\enemyUp</sprite>
-      <sprite>sprites\enemyRight</sprite>
-      <sprite>sprites\enemyDown</sprite>
       <sprite>sprites\enemyDead</sprite>
+      <sprite>sprites\enemyDown</sprite>
+      <sprite>sprites\enemyLeft</sprite>
+      <sprite>sprites\enemyRight</sprite>
+      <sprite>sprites\enemyUp</sprite>
     </sprites>
     <sprite>sprites\EnemySightCone_Sprite</sprite>
     <sprites name="HackingSprites">
@@ -35,25 +35,26 @@
     <sprite>sprites\Lvl1_Sprite</sprite>
     <sprite>sprites\Lvl2_Changed</sprite>
     <sprite>sprites\Lvl2_Sprite</sprite>
+    <sprite>sprites\Lvl3_Changed</sprite>
+    <sprite>sprites\Lvl3_Sprite</sprite>
+    <sprite>sprites\Lvl4_Changed</sprite>
+    <sprite>sprites\Lvl4_Sprite</sprite>
     <sprite>sprites\LvlSelect_Title</sprite>
     <sprite>sprites\MainMenu_Sprite</sprite>
     <sprite>sprites\playerSprite</sprite>
     <sprites name="robotGroup">
-      <sprite>sprites\robotRight</sprite>
-      <sprite>sprites\robotLeft</sprite>
-      <sprite>sprites\robotUp</sprite>
       <sprite>sprites\robotDown</sprite>
+      <sprite>sprites\robotLeft</sprite>
+      <sprite>sprites\robotRight</sprite>
+      <sprite>sprites\robotUp</sprite>
     </sprites>
     <sprite>sprites\RobotSightCone_Sprite</sprite>
     <sprite>sprites\Start_button</sprite>
     <sprite>sprites\Terminal</sprite>
     <sprite>sprites\TestW</sprite>
     <sprite>sprites\Turret</sprite>
+    <sprite>sprites\TurretTerminal_Sprite</sprite>
     <sprite>sprites\Walls</sprite>
-    <sprite>sprites\Lvl3_Sprite</sprite>
-    <sprite>sprites\Lvl3_Changed</sprite>
-    <sprite>sprites\Lvl4_Sprite</sprite>
-    <sprite>sprites\Lvl4_Changed</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
@@ -90,6 +91,7 @@
     <object>objects\LS_Title</object>
     <object>objects\Lvl1_Button</object>
     <object>objects\Lvl2_Button</object>
+    <object>objects\Lvl3_Button</object>
     <object>objects\MainMenu_Button</object>
     <object>objects\Pause_Obj</object>
     <object>objects\playerObject</object>
@@ -97,8 +99,8 @@
     <object>objects\Start</object>
     <object>objects\Terminal_Obj</object>
     <object>objects\Turret_Obj</object>
+    <object>objects\TurretHackingTerminal_Obj</object>
     <object>objects\Wall_Obj</object>
-    <object>objects\Lvl3_Button</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
@@ -109,7 +111,7 @@
     <room>rooms\testRoom</room>
   </rooms>
   <constants number="2">
-    <constant name="GM_build_date">41968.196370081</constant>
+    <constant name="GM_build_date">41968.2475618866</constant>
     <constant name="GM_version">'100'</constant>
   </constants>
   <help>

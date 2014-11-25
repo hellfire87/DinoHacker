@@ -125,6 +125,7 @@ mp_grid_add_instances(grid, LockedDoor_Obj, true);</code>
     <instance objName="LevelEnd_Obj" x="1292" y="752" name="inst_43438AE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Camera_Obj" x="256" y="172" name="Camera_01" locked="0" code="lookDirectionLow = 135;&#xA;lookDirectionHigh = 225;&#xA;direction = lookDirectionLow;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="CameraTerminal_Obj" x="268" y="248" name="CameraTerminal_01" locked="0" code="cameraX = 252;&#xA;cameraY = 168;&#xA;" scaleX="0.5" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="TurretHackingTerminal_Obj" x="1064" y="188" name="inst_450E91C7" locked="0" code="turretX = 420;&#xA;turretY = 416;&#xA;" scaleX="0.5" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

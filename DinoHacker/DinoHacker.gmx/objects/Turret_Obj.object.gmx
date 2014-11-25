@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alive = true;
+            <string>hacked = false;
 lookDirectionLow = 0;
 lookDirectionHigh = 0;
 goingTowardsHigh = true;
@@ -57,43 +57,68 @@ paused = false;
             <string>if (paused) exit;
 
 //camera look code
-if(alive) {
-    isMixed = lookDirectionLow &gt; lookDirectionHigh;
+isMixed = lookDirectionLow &gt; lookDirectionHigh;
     
-    if (goingTowardsHigh) {
-        direction += 1;
-        if(direction == lookDirectionHigh ) {
-            goingTowardsHigh = false;           
-        }
-    } else {
-        direction -= 1;
-        if (direction == lookDirectionLow ) {
-            goingTowardsHigh = true;
-        }
+if (goingTowardsHigh) {
+    direction += 1;
+    if(direction == lookDirectionHigh ) {
+        goingTowardsHigh = false;           
     }
-} 
+} else {
+    direction -= 1;
+    if (direction == lookDirectionLow ) {
+        goingTowardsHigh = true;
+    }
+}
 
 //check for the player
-var distanceToPlayer = distance_to_object(playerObject);
-if (alive &amp;&amp; distanceToPlayer &lt; 150) {
-  playerDirection = point_direction(x,y,playerObject.x,playerObject.y);
-  enemyDirection = direction;
+if (hacked) {
+    var i;
+    for (i = 0; i &lt; instance_number(enemyObject); i+= 1) {
+        var enemyToFind = instance_find(enemyObject, i);
+        var distanceToEnemy = distance_to_point(enemyToFind.x, enemyToFind.y);
+        if (distanceToEnemy &lt; 150) {
+            var enemyDirection = point_direction(x,y,enemyToFind.x,enemyToFind.y);
+            var robotDirection = direction;
   
-  if (enemyDirection &gt;= (360-8)) {
-    enemyDirection -= 360;
-  }
-  if (playerDirection &gt;= (360-8)) {
-    playerDirection -= 360;
-  }
+            if (robotDirection &gt;= (360-8)) {
+                robotDirection -= 360;
+            }
+            if (enemyDirection &gt;= (360-8)) {
+                enemyDirection -= 360;
+            }
   
-  checkDirection = abs(enemyDirection - playerDirection);
-  wallBetween = collision_line(x,y,playerObject.x, playerObject.y,Wall_Obj, false, true) == noone;
-  doorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
-  lockedDoorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
-  if (checkDirection &lt; 8 &amp;&amp; wallBetween &amp;&amp; doorBetween &amp;&amp; lockedDoorBetween) {
-    room_restart();
-  }  
-} 
+            var checkDirection = abs(robotDirection - enemyDirection);
+            var wallBetween = collision_line(x,y,enemyToFind.x, enemyToFind.y,Wall_Obj, false, true) == noone;
+            var doorBetween = collision_line(x,y,enemyToFind.x, enemyToFind.y,Door_Obj, false, true) == noone;
+            var lockedDoorBetween = collision_line(x,y,enemyToFind.x, enemyToFind.y,LockedDoor_Obj, false, true) == noone;
+            if (checkDirection &lt; 8 &amp;&amp; wallBetween &amp;&amp; doorBetween &amp;&amp; lockedDoorBetween) {
+                with(enemyToFind) isAlive = false;
+            }  
+        }
+    }    
+} else {
+    var distanceToPlayer = distance_to_object(playerObject);
+    if (distanceToPlayer &lt; 150) {
+        playerDirection = point_direction(x,y,playerObject.x,playerObject.y);
+        enemyDirection = direction;
+  
+        if (enemyDirection &gt;= (360-8)) {
+            enemyDirection -= 360;
+        }
+        if (playerDirection &gt;= (360-8)) {
+            playerDirection -= 360;
+        }
+  
+        checkDirection = abs(enemyDirection - playerDirection);
+        wallBetween = collision_line(x,y,playerObject.x, playerObject.y,Wall_Obj, false, true) == noone;
+        doorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
+        lockedDoorBetween = collision_line(x,y,playerObject.x, playerObject.y,LockedDoor_Obj, false, true) == noone;
+        if (checkDirection &lt; 8 &amp;&amp; wallBetween &amp;&amp; doorBetween &amp;&amp; lockedDoorBetween) {
+            room_restart();
+        }  
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -116,7 +141,9 @@ if (alive &amp;&amp; distanceToPlayer &lt; 150) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (alive) {
+            <string>if (hacked) {
+    draw_sprite_ext(CameraSightCone_Sprite,0,x,y,1,1,direction,c_blue,1);
+} else {
     draw_sprite_ext(CameraSightCone_Sprite,0,x,y,1,1,direction,c_white,1);
 }
 </string>
