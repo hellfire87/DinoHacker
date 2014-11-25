@@ -159,7 +159,7 @@ draw_text_transformed_colour(x + 138, y + 10, string(prime4)       , 2, 2, 0, c_
 
 currentAnswer = prime1*prime2*prime3*prime4;
 if (currentAnswer == answer) {
-    solved = true;
+    terminalInstance.hacked = true;
 }
 </string>
           </argument>

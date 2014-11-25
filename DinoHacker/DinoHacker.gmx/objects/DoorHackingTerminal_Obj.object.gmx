@@ -30,6 +30,8 @@ hacked = false;
 hackingActionComplete = false;
 pausable = true;
 paused = false;
+doorX = 0;
+doorY = 0;
 </string>
           </argument>
         </arguments>
@@ -57,8 +59,7 @@ paused = false;
 if (hacked &amp;&amp; !hackingActionComplete) {
     with(hackingObject) instance_destroy();
     
-    doorInstanceID = string_replace(id, "DoorTerminal", "LockedDoor");
-    doorToUnlock = instance_find(LockedDoor_Obj, doorInstanceID);
+    doorToUnlock = instance_nearest(doorX, doorY, LockedDoor_Obj);
     var newDoorX = doorToUnlock.x;
     var newDoorY = doorToUnlock.y;
     var newDoorXScale = doorToUnlock.image_xscale;
