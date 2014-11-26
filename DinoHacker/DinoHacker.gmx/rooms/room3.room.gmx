@@ -85,10 +85,10 @@ mp_grid_add_instances(grid, LockedDoor_Obj, true);</code>
     <instance objName="LockedDoor_Obj" x="68" y="444" name="LockedDoor_3" locked="0" code="" scaleX="3.29999995231628" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="Door_Obj" x="1288" y="552" name="inst_3CAB78BC" locked="0" code="" scaleX="2.90000009536743" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="Camera_Obj" x="624" y="660" name="inst_F84A91F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="DoorHackingTerminal_Obj" x="0" y="640" name="DoorTerminal_1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="DoorHackingTerminal_Obj" x="1020" y="412" name="DoorTerminal_2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="DoorHackingTerminal_Obj" x="0" y="640" name="DoorTerminal_1" locked="0" code="doorX = 1160; &#xA;doorY = 480;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="DoorHackingTerminal_Obj" x="1020" y="412" name="DoorTerminal_2" locked="0" code="doorX = 624;&#xA;doorY = 488;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Turret_Obj" x="304" y="652" name="inst_F98423EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="DoorHackingTerminal_Obj" x="448" y="4" name="DoorTerminal_3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="DoorHackingTerminal_Obj" x="448" y="4" name="DoorTerminal_3" locked="0" code="doorX = 60;&#xA;doorY = 440;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Camera_Obj" x="872" y="660" name="inst_CBD0FF05" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Turret_Obj" x="1196" y="660" name="inst_88E1C548" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="LevelEnd_Obj" x="64" y="60" name="inst_0C1B94BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
