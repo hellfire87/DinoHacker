@@ -177,7 +177,11 @@ if (abs(lastImageRotation - direction) &gt;= 1)  {
           <argument>
             <kind>1</kind>
             <string>if (!beingHacked ) {
-    draw_sprite_ext(RobotSightCone_Sprite,0,x,y,1,1,direction,c_white,1);
+    if (hacked) {
+        draw_sprite_ext(RobotSightCone_Sprite,0,x,y,1,1,direction,c_blue,1);
+    } else {
+        draw_sprite_ext(RobotSightCone_Sprite,0,x,y,1,1,direction,c_white,1);
+    }
 }
 </string>
           </argument>
