@@ -41,6 +41,12 @@
     <sprite>sprites\Lvl4_Sprite</sprite>
     <sprite>sprites\LvlSelect_Title</sprite>
     <sprite>sprites\MainMenu_Sprite</sprite>
+    <sprites name="pauseGroup">
+      <sprite>sprites\Pause_MainMenuSelected_Sprite</sprite>
+      <sprite>sprites\Pause_RestartSelected_Sprite</sprite>
+      <sprite>sprites\Pause_ResumeSelected_Sprite</sprite>
+      <sprite>sprites\Paused_LevelSelectSelected_Sprite</sprite>
+    </sprites>
     <sprite>sprites\playerSprite</sprite>
     <sprites name="robotGroup">
       <sprite>sprites\robotDown</sprite>
@@ -55,6 +61,7 @@
     <sprite>sprites\Turret</sprite>
     <sprite>sprites\TurretTerminal_Sprite</sprite>
     <sprite>sprites\Walls</sprite>
+    <sprite>sprites\sprite47</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
