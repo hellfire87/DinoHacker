@@ -57,11 +57,13 @@
     <sprite>sprites\RobotSightCone_Sprite</sprite>
     <sprite>sprites\Start_button</sprite>
     <sprite>sprites\Terminal</sprite>
-    <sprite>sprites\TestW</sprite>
+    <sprite>sprites\EndSprite</sprite>
     <sprite>sprites\Turret</sprite>
     <sprite>sprites\TurretTerminal_Sprite</sprite>
     <sprite>sprites\Walls</sprite>
     <sprite>sprites\sprite47</sprite>
+    <sprite>sprites\StartSprite</sprite>
+    <sprite>sprites\Test</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
@@ -124,6 +126,8 @@
     <object>objects\Turret_Obj</object>
     <object>objects\TurretHackingTerminal_Obj</object>
     <object>objects\Wall_Obj</object>
+    <object>objects\Beginning</object>
+    <object>objects\Tester</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
