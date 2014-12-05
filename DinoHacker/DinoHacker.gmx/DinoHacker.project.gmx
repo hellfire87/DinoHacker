@@ -13,6 +13,7 @@
     <sprite>sprites\CameraTerminal_Sprite</sprite>
     <sprite>sprites\Doors</sprite>
     <sprite>sprites\DoorTerminal_Sprite</sprite>
+    <sprite>sprites\EndSprite</sprite>
     <sprites name="enemyGroup">
       <sprite>sprites\enemyDead</sprite>
       <sprite>sprites\enemyDown</sprite>
@@ -56,14 +57,13 @@
     </sprites>
     <sprite>sprites\RobotSightCone_Sprite</sprite>
     <sprite>sprites\Start_button</sprite>
+    <sprite>sprites\StartSprite</sprite>
     <sprite>sprites\Terminal</sprite>
-    <sprite>sprites\EndSprite</sprite>
-    <sprite>sprites\Turret</sprite>
+    <sprite>sprites\Test</sprite>
+    <sprite>sprites\Turret_Sprite</sprite>
     <sprite>sprites\TurretTerminal_Sprite</sprite>
     <sprite>sprites\Walls</sprite>
-    <sprite>sprites\sprite47</sprite>
-    <sprite>sprites\StartSprite</sprite>
-    <sprite>sprites\Test</sprite>
+    <sprite>sprites\TurretHacked_Sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
@@ -104,6 +104,7 @@
     <path>paths\Tut2_Path10</path>
   </paths>
   <objects name="objects">
+    <object>objects\Beginning</object>
     <object>objects\Camera_Obj</object>
     <object>objects\CameraTerminal_Obj</object>
     <object>objects\Door_Obj</object>
@@ -123,11 +124,10 @@
     <object>objects\Robot_Obj</object>
     <object>objects\Start</object>
     <object>objects\Terminal_Obj</object>
+    <object>objects\Tester</object>
     <object>objects\Turret_Obj</object>
     <object>objects\TurretHackingTerminal_Obj</object>
     <object>objects\Wall_Obj</object>
-    <object>objects\Beginning</object>
-    <object>objects\Tester</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>

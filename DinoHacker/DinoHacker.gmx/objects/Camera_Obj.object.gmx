@@ -103,7 +103,7 @@ if (alive &amp;&amp; distanceToPlayer &lt; 150) {
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="73">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -120,7 +120,9 @@ if (alive &amp;&amp; distanceToPlayer &lt; 150) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (alive) {
+            <string>draw_self();
+
+if (alive) {
     draw_sprite_ext(CameraSightCone_Sprite,0,x,y,1,1,direction,c_white,1);
 }
 </string>

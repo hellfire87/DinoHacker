@@ -3,7 +3,7 @@
   <spriteName>enemyRight</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -167,7 +167,7 @@ if (isAlive &amp;&amp; isReturning) {
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="73">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -184,7 +184,9 @@ if (isAlive &amp;&amp; isReturning) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (isAlive ) {
+            <string>draw_self();
+
+if (isAlive ) {
     draw_sprite_ext(EnemySightCone_Sprite,0,x,y,1,1,direction,c_white,1);
 }
 </string>

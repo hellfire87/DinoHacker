@@ -159,7 +159,7 @@ if (abs(lastImageRotation - direction) &gt;= 1)  {
         </arguments>
       </action>
     </event>
-    <event eventtype="8" enumb="73">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -176,7 +176,9 @@ if (abs(lastImageRotation - direction) &gt;= 1)  {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!beingHacked ) {
+            <string>draw_self();
+
+if (!beingHacked ) {
     if (hacked) {
         draw_sprite_ext(RobotSightCone_Sprite,0,x,y,1,1,direction,c_blue,1);
     } else {
