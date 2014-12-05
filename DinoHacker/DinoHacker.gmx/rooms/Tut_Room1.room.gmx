@@ -10,8 +10,11 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
-  <enableViews>0</enableViews>
+  <code>globalvar grid;
+grid = mp_grid_create(0,0,room_width/32,room_height/32, 32,32);
+mp_grid_add_instances(grid, Wall_Obj, true);
+mp_grid_add_instances(grid, LockedDoor_Obj, true);</code>
+  <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
@@ -41,7 +44,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="playerObject" xview="0" yview="0" wview="819" hview="461" xport="0" yport="0" wport="1365" hport="768" hborder="400" vborder="225" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -79,13 +82,14 @@
     <instance objName="LockedDoor_Obj" x="1136" y="108" name="inst_B7B8C392" locked="0" code="" scaleX="3.40000009536743" scaleY="0.25" colour="4294967295" rotation="0"/>
     <instance objName="LockedDoor_Obj" x="1016" y="60" name="inst_D523D282" locked="0" code="" scaleX="0.25" scaleY="3" colour="4294967295" rotation="0"/>
     <instance objName="Door_Obj" x="672" y="664" name="inst_602188A5" locked="0" code="" scaleX="3.5" scaleY="0.25" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="672" y="36" name="inst_1744A030" locked="0" code="Direction = 270;&#xA;lookDirectionLow = 180;&#xA;lookDirectionHigh = 0;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="180" y="456" name="inst_322D8354" locked="0" code="Direction = 0;&#xA;lookDirectionLow = 0;&#xA;lookDirectionHigh = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="1176" y="460" name="inst_1F45F562" locked="0" code="Direction = 180;&#xA;lookDirectionLow = 90;&#xA;lookDirectionHigh = 180;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="enemyObject" x="336" y="60" name="inst_9F8EE0E5" locked="0" code="direction = 180;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="enemyObject" x="724" y="428" name="inst_5804BAAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="enemyObject" x="632" y="428" name="inst_5FA7CA90" locked="0" code="direction = 180;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="672" y="36" name="inst_1744A030" locked="0" code="direction = 270;&#xA;lookDirectionLow = 180;&#xA;lookDirectionHigh = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="180" y="456" name="inst_322D8354" locked="0" code="lookDirectionLow = 0;&#xA;lookDirectionHigh = 90;&#xA;direction = lookDirectionLow;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="1176" y="460" name="inst_1F45F562" locked="0" code="lookDirectionLow = 90;&#xA;lookDirectionHigh = 180;&#xA;direction = lookDirectionLow;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="enemyObject" x="336" y="60" name="inst_9F8EE0E5" locked="0" code="direction = 180;&#xA;enemyPath = Tut1_Path1;&#xA;path_start(enemyPath, 3, 2, true)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="enemyObject" x="724" y="428" name="inst_5804BAAF" locked="0" code="enemyPath = Tut1_Path3;&#xA;path_start(enemyPath, 3, 2, true)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="enemyObject" x="632" y="428" name="inst_5FA7CA90" locked="0" code="direction = 180;&#xA;enemyPath = Tut1_Path2;&#xA;path_start(enemyPath, 3, 2, true)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="LevelEnd_Obj" x="32" y="56" name="inst_DC216633" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Pause_Obj" x="392" y="620" name="inst_6C9D0998" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

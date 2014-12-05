@@ -10,8 +10,11 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
-  <enableViews>0</enableViews>
+  <code>globalvar grid;
+grid = mp_grid_create(0,0,room_width/32,room_height/32, 32,32);
+mp_grid_add_instances(grid, Wall_Obj, true);
+mp_grid_add_instances(grid, LockedDoor_Obj, true);</code>
+  <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
@@ -41,14 +44,14 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
-    <view visible="0" objName="" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="-1" objName="playerObject" xview="0" yview="0" wview="819" hview="461" xport="0" yport="0" wport="1365" hport="768" hborder="400" vborder="225" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
     <instance objName="Wall_Obj" x="0" y="0" name="inst_C2F333DC" locked="0" code="" scaleX="0.5" scaleY="24" colour="4294967295" rotation="0"/>
@@ -85,8 +88,8 @@
     <instance objName="Turret_Obj" x="668" y="328" name="inst_B6406504" locked="0" code="Direction = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Turret_Obj" x="872" y="736" name="inst_DF143414" locked="0" code="Direction = 90;&#xA;lookDirectionLow = 0;&#xA;lookDirectionHigh = 180;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Turret_Obj" x="484" y="736" name="inst_F8A76F93" locked="0" code="Direction = 90;&#xA;lookDirectionLow = 0;&#xA;lookDirectionHigh = 180;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="36" y="556" name="inst_7A4F80AC" locked="0" code="Direction = 0;&#xA;lookDirectionLow = 270;&#xA;lookDirectionHigh = 0;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="1320" y="556" name="inst_F85B9E81" locked="0" code="Direction = 180;&#xA;lookDirectionLow = 270;&#xA;lookDirectionHigh = 180;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="36" y="556" name="inst_7A4F80AC" locked="0" code="lookDirectionLow = 270;&#xA;lookDirectionHigh = 0;&#xA;direction = lookDirectionLow;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="1320" y="556" name="inst_F85B9E81" locked="0" code="lookDirectionLow = 180;&#xA;lookDirectionHigh = 270;&#xA;direction = lookDirectionLow;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="664" y="528" name="inst_5CDE7E37" locked="0" code="direction = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="68" y="304" name="inst_A4A3DCED" locked="0" code="enemyPath = Tut2_Path2;&#xA;path_start(enemyPath, 3, 2, true)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="1280" y="352" name="inst_482AACFD" locked="0" code="direction = 180;&#xA;enemyPath = Tut2_Path3;&#xA;path_start(enemyPath, 3, 2, true)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -100,6 +103,7 @@
     <instance objName="enemyObject" x="1268" y="428" name="inst_BC93EA0A" locked="0" code="direction = 180;&#xA;enemyPath = Tut2_Path7;&#xA;path_start(enemyPath, 3, 2, true)" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="DoorHackingTerminal_Obj" x="312" y="12" name="inst_FB633AC4" locked="0" code="doorX = 396;&#xA;doorY = 56;&#xA;" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="TurretHackingTerminal_Obj" x="1028" y="252" name="inst_6B755F92" locked="0" code="turretX = 664;&#xA;turretY = 328;&#xA;" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Pause_Obj" x="296" y="260" name="inst_D56330A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -66,6 +66,7 @@
   <backgrounds name="background">
     <background>background\MenuBackground</background>
     <background>background\LS_Background</background>
+    <background>background\background2</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\Level1_Path1</path>
@@ -86,6 +87,9 @@
     <path>paths\Level3_Path5</path>
     <path>paths\Level3_Path6</path>
     <path>paths\Level3_Path7</path>
+    <path>paths\Tut1_Path1</path>
+    <path>paths\Tut1_Path2</path>
+    <path>paths\Tut1_Path3</path>
     <path>paths\Tut2_Path1</path>
     <path>paths\Tut2_Path2</path>
     <path>paths\Tut2_Path3</path>
