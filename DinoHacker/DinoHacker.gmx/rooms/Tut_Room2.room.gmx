@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1350</width>
   <height>768</height>
-  <vsnap>4</vsnap>
-  <hsnap>4</hsnap>
+  <vsnap>2</vsnap>
+  <hsnap>2</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -77,19 +77,19 @@ mp_grid_add_instances(grid, LockedDoor_Obj, true);</code>
     <instance objName="Wall_Obj" x="1092" y="112" name="inst_F0CDAFAA" locked="0" code="" scaleX="8" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="LevelEnd_Obj" x="652" y="676" name="inst_56845695" locked="0" code="" scaleX="2.5" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="Wall_Obj" x="348" y="524" name="inst_2AB178A1" locked="0" code="" scaleX="8" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="Door_Obj" x="116" y="64" name="inst_1A5200DE" locked="0" code="" scaleX="0.25" scaleY="3.5" colour="4294967295" rotation="0"/>
-    <instance objName="Door_Obj" x="608" y="696" name="inst_53DC6CB7" locked="0" code="" scaleX="0.25" scaleY="3.5" colour="4294967295" rotation="0"/>
-    <instance objName="Door_Obj" x="736" y="696" name="inst_4B240CDF" locked="0" code="" scaleX="0.25" scaleY="3.5" colour="4294967295" rotation="0"/>
-    <instance objName="Door_Obj" x="1040" y="120" name="inst_0CDC6B40" locked="0" code="" scaleX="3.5" scaleY="0.25" colour="4294967295" rotation="0"/>
-    <instance objName="Door_Obj" x="1044" y="532" name="inst_40835C2C" locked="0" code="" scaleX="3.5" scaleY="0.25" colour="4294967295" rotation="0"/>
-    <instance objName="Door_Obj" x="300" y="532" name="inst_5D606D8B" locked="0" code="" scaleX="3.5" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="Beginning" x="16" y="16" name="inst_DE858DA6" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Door_Obj" x="608" y="696" name="inst_53DC6CB7" locked="0" code="" scaleX="1" scaleY="0.629999995231628" colour="4294967295" rotation="0"/>
+    <instance objName="Door_Obj" x="736" y="696" name="inst_4B240CDF" locked="0" code="" scaleX="1" scaleY="0.629999995231628" colour="4294967295" rotation="0"/>
+    <instance objName="Door_Obj" x="1042" y="120" name="inst_0CDC6B40" locked="0" code="" scaleX="1" scaleY="0.560000002384186" colour="4294967295" rotation="90"/>
+    <instance objName="Door_Obj" x="1044" y="532" name="inst_40835C2C" locked="0" code="" scaleX="1" scaleY="0.540000021457672" colour="4294967295" rotation="90"/>
+    <instance objName="Door_Obj" x="302" y="532" name="inst_5D606D8B" locked="0" code="" scaleX="1" scaleY="0.519999980926514" colour="4294967295" rotation="90"/>
     <instance objName="LockedDoor_Obj" x="300" y="272" name="inst_03F8D75E" locked="0" code="" scaleX="3.5" scaleY="0.25" colour="4294967295" rotation="0"/>
-    <instance objName="LockedDoor_Obj" x="400" y="64" name="inst_3B0036FC" locked="0" code="" scaleX="0.25" scaleY="3.5" colour="4294967295" rotation="0"/>
+    <instance objName="Door_Obj" x="116" y="64" name="inst_1A003CBD" locked="0" code="" scaleX="1" scaleY="0.540000021457672" colour="4294967295" rotation="0"/>
     <instance objName="Turret_Obj" x="668" y="328" name="inst_B6406504" locked="0" code="Direction = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Turret_Obj" x="872" y="736" name="inst_DF143414" locked="0" code="Direction = 90;&#xA;lookDirectionLow = 0;&#xA;lookDirectionHigh = 180;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Turret_Obj" x="484" y="736" name="inst_F8A76F93" locked="0" code="Direction = 90;&#xA;lookDirectionLow = 0;&#xA;lookDirectionHigh = 180;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="36" y="556" name="inst_7A4F80AC" locked="0" code="lookDirectionLow = 270;&#xA;lookDirectionHigh = 0;&#xA;direction = lookDirectionLow;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="1320" y="556" name="inst_F85B9E81" locked="0" code="lookDirectionLow = 180;&#xA;lookDirectionHigh = 270;&#xA;direction = lookDirectionLow;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="26" y="550" name="inst_7A4F80AC" locked="0" code="lookDirectionLow = 270;&#xA;lookDirectionHigh = 0;&#xA;direction = lookDirectionLow;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="1324" y="550" name="inst_F85B9E81" locked="0" code="lookDirectionLow = 180;&#xA;lookDirectionHigh = 270;&#xA;direction = lookDirectionLow;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="664" y="528" name="inst_5CDE7E37" locked="0" code="direction = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="68" y="304" name="inst_A4A3DCED" locked="0" code="enemyPath = Tut2_Path2;&#xA;path_start(enemyPath, 3, 2, true)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="1280" y="352" name="inst_482AACFD" locked="0" code="direction = 180;&#xA;enemyPath = Tut2_Path3;&#xA;path_start(enemyPath, 3, 2, true)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -101,10 +101,10 @@ mp_grid_add_instances(grid, LockedDoor_Obj, true);</code>
     <instance objName="enemyObject" x="888" y="488" name="inst_9984C225" locked="0" code="enemyPath = Tut2_Path5;&#xA;path_start(enemyPath, 3, 2, true)" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="1164" y="492" name="inst_B97483C3" locked="0" code="direction = 180;&#xA;enemyPath = Tut2_Path6;&#xA;path_start(enemyPath, 3, 2, true)" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="1268" y="428" name="inst_BC93EA0A" locked="0" code="direction = 180;&#xA;enemyPath = Tut2_Path7;&#xA;path_start(enemyPath, 3, 2, true)" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="DoorHackingTerminal_Obj" x="312" y="12" name="inst_FB633AC4" locked="0" code="doorX = 396;&#xA;doorY = 56;&#xA;" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="DoorHackingTerminal_Obj" x="312" y="12" name="inst_FB633AC4" locked="0" code="doorX = 376;&#xA;doorY = 64;&#xA;" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="TurretHackingTerminal_Obj" x="1028" y="252" name="inst_6B755F92" locked="0" code="turretX = 664;&#xA;turretY = 328;&#xA;" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="Pause_Obj" x="296" y="260" name="inst_D56330A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Beginning" x="16" y="16" name="inst_DE858DA6" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="LockedDoor_Obj" x="380" y="64" name="inst_C42FF283" locked="0" code="" scaleX="1" scaleY="0.540000021457672" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

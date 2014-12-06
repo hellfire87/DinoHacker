@@ -12,6 +12,11 @@
     <sprite>sprites\CameraSightCone_Sprite</sprite>
     <sprite>sprites\CameraTerminal_Sprite</sprite>
     <sprite>sprites\Doors</sprite>
+    <sprites name="doorSprites">
+      <sprite>sprites\DoorClosed_Sprite</sprite>
+      <sprite>sprites\DoorOpen_Sprite</sprite>
+      <sprite>sprites\LockedDoor_Sprite</sprite>
+    </sprites>
     <sprite>sprites\DoorTerminal_Sprite</sprite>
     <sprite>sprites\EndSprite</sprite>
     <sprites name="enemyGroup">
@@ -32,14 +37,16 @@
     <sprite>sprites\hazmatmovL</sprite>
     <sprite>sprites\Level_Select</sprite>
     <sprite>sprites\LockedDoor</sprite>
-    <sprite>sprites\Lvl1_Changed</sprite>
-    <sprite>sprites\Lvl1_Sprite</sprite>
-    <sprite>sprites\Lvl2_Changed</sprite>
-    <sprite>sprites\Lvl2_Sprite</sprite>
-    <sprite>sprites\Lvl3_Changed</sprite>
-    <sprite>sprites\Lvl3_Sprite</sprite>
-    <sprite>sprites\Lvl4_Changed</sprite>
-    <sprite>sprites\Lvl4_Sprite</sprite>
+    <sprites name="lvlButtons">
+      <sprite>sprites\Lvl1_Changed</sprite>
+      <sprite>sprites\Lvl1_Sprite</sprite>
+      <sprite>sprites\Lvl2_Changed</sprite>
+      <sprite>sprites\Lvl2_Sprite</sprite>
+      <sprite>sprites\Lvl3_Changed</sprite>
+      <sprite>sprites\Lvl3_Sprite</sprite>
+      <sprite>sprites\Lvl4_Changed</sprite>
+      <sprite>sprites\Lvl4_Sprite</sprite>
+    </sprites>
     <sprite>sprites\LvlSelect_Title</sprite>
     <sprite>sprites\MainMenu_Sprite</sprite>
     <sprites name="pauseGroup">
@@ -60,10 +67,12 @@
     <sprite>sprites\StartSprite</sprite>
     <sprite>sprites\Terminal</sprite>
     <sprite>sprites\Test</sprite>
-    <sprite>sprites\Turret_Sprite</sprite>
+    <sprites name="turretGroup">
+      <sprite>sprites\TurretHacked_Sprite</sprite>
+      <sprite>sprites\Turret_Sprite</sprite>
+    </sprites>
     <sprite>sprites\TurretTerminal_Sprite</sprite>
     <sprite>sprites\Walls</sprite>
-    <sprite>sprites\TurretHacked_Sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
