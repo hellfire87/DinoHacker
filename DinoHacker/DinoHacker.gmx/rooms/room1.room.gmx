@@ -101,7 +101,7 @@ mp_grid_add_instances(grid, LockedDoor_Obj, true);</code>
     <instance objName="Door_Obj" x="1136" y="512" name="inst_301502C0" locked="0" code="" scaleX="1" scaleY="0.540000021457672" colour="4294967295" rotation="90"/>
     <instance objName="Door_Obj" x="1136" y="268" name="inst_29857303" locked="0" code="" scaleX="1" scaleY="0.540000021457672" colour="4294967295" rotation="90"/>
     <instance objName="Door_Obj" x="1292" y="114" name="inst_50812C05" locked="0" code="" scaleX="1" scaleY="0.469999998807907" colour="4294967295" rotation="90"/>
-    <instance objName="DoorHackingTerminal_Obj" x="16" y="390" name="DoorTerminal_001" locked="0" code="doorX = 1292;&#xA;doorY = 656;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="DoorHackingTerminal_Obj" x="16" y="392" name="DoorTerminal_001" locked="0" code="doorX = 1292;&#xA;doorY = 656;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Door_Obj" x="1244" y="392" name="inst_A515EF4A" locked="0" code="" scaleX="1" scaleY="0.449999988079071" colour="4294967295" rotation="0"/>
     <instance objName="Door_Obj" x="912" y="346" name="inst_46D56921" locked="0" code="" scaleX="1" scaleY="0.340000003576279" colour="4294967295" rotation="0"/>
     <instance objName="Door_Obj" x="588" y="346" name="inst_AF23A6AA" locked="0" code="" scaleX="1" scaleY="0.340000003576279" colour="4294967295" rotation="0"/>
@@ -143,6 +143,17 @@ mp_grid_add_instances(grid, LockedDoor_Obj, true);</code>
     <instance objName="Machine_Obj" x="338" y="394" name="inst_00732CEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="Machine_Obj" x="420" y="394" name="inst_EA5F2F31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="180"/>
     <instance objName="Chair_Obj" x="280" y="142" name="inst_5CA63D2A" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
+    <instance objName="Chair_Obj" x="652" y="412" name="inst_90030504" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
+    <instance objName="Chair_Obj" x="670" y="412" name="inst_CB324AA2" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
+    <instance objName="Chair_Obj" x="688" y="412" name="inst_71284330" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
+    <instance objName="Chair_Obj" x="706" y="412" name="inst_4CE13842" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
+    <instance objName="Chair_Obj" x="724" y="412" name="inst_F191BE81" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
+    <instance objName="Chair_Obj" x="742" y="412" name="inst_276A5EC8" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
+    <instance objName="Chair_Obj" x="760" y="412" name="inst_7666FB31" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="0"/>
+    <instance objName="Drawer_Obj" x="784" y="410" name="inst_E96D0C19" locked="0" code="" scaleX="0.600000023841858" scaleY="0.600000023841858" colour="4294967295" rotation="0"/>
+    <instance objName="Table_Obj" x="958" y="414" name="inst_0CF4C2FB" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="Computer_Obj" x="922" y="442" name="inst_2E512BF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="Chair_Obj" x="948" y="466" name="inst_1CC4CF03" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="180"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -85,7 +85,7 @@ mp_grid_add_instances(grid, LockedDoor_Obj, true);</code>
     <instance objName="LockedDoor_Obj" x="66" y="444" name="LockedDoor_3" locked="0" code="" scaleX="1" scaleY="0.564999997615814" colour="4294967295" rotation="90"/>
     <instance objName="Door_Obj" x="1290" y="552" name="inst_3CAB78BC" locked="0" code="" scaleX="1" scaleY="0.504999995231628" colour="4294967295" rotation="90"/>
     <instance objName="Camera_Obj" x="624" y="660" name="inst_F84A91F5" locked="0" code="direction = 180;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="DoorHackingTerminal_Obj" x="16" y="640" name="DoorTerminal_1" locked="0" code="doorX = 1160; &#xA;doorY = 480;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="DoorHackingTerminal_Obj" x="16" y="644" name="DoorTerminal_1" locked="0" code="doorX = 1160; &#xA;doorY = 480;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="DoorHackingTerminal_Obj" x="1020" y="432" name="DoorTerminal_2" locked="0" code="doorX = 624;&#xA;doorY = 488;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="Turret_Obj" x="304" y="652" name="inst_F98423EC" locked="0" code="direction = 270;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="DoorHackingTerminal_Obj" x="448" y="26" name="DoorTerminal_3" locked="0" code="doorX = 60;&#xA;doorY = 440;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
@@ -103,6 +103,29 @@ mp_grid_add_instances(grid, LockedDoor_Obj, true);</code>
     <instance objName="Beginning" x="1240" y="12" name="inst_C8B3A3A2" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Pause_Obj" x="1060" y="214" name="inst_BC174038" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="472" y="244" name="inst_23E633D6" locked="0" code="enemyPath = Level3_Path5;&#xA;path_start(enemyPath, 3, 2, true);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Machine_Obj" x="16" y="604" name="inst_A6A1E01C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="Machine_Obj" x="16" y="744" name="inst_D6CE33E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
+    <instance objName="Chair_Obj" x="1200" y="432" name="inst_894AFEA2" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="180"/>
+    <instance objName="Chair_Obj" x="1182" y="432" name="inst_91968407" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="180"/>
+    <instance objName="Chair_Obj" x="1164" y="432" name="inst_DA4FE512" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="180"/>
+    <instance objName="Chair_Obj" x="1144" y="432" name="inst_00CC6519" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="180"/>
+    <instance objName="Chair_Obj" x="1124" y="432" name="inst_265D0AEE" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="180"/>
+    <instance objName="Chair_Obj" x="1104" y="432" name="inst_D3B3F80B" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="180"/>
+    <instance objName="Chair_Obj" x="882" y="432" name="inst_7DA21EA8" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="180"/>
+    <instance objName="Chair_Obj" x="902" y="432" name="inst_4BE02DE9" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="180"/>
+    <instance objName="Chair_Obj" x="922" y="432" name="inst_F1BD07A0" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="180"/>
+    <instance objName="Chair_Obj" x="942" y="432" name="inst_024AB28E" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="180"/>
+    <instance objName="Chair_Obj" x="960" y="432" name="inst_0D462543" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="180"/>
+    <instance objName="Chair_Obj" x="978" y="432" name="inst_A1E4975B" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="180"/>
+    <instance objName="Chair_Obj" x="708" y="264" name="inst_22497339" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="270"/>
+    <instance objName="Chair_Obj" x="708" y="246" name="inst_D43009AF" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="270"/>
+    <instance objName="Chair_Obj" x="708" y="228" name="inst_404C6756" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="270"/>
+    <instance objName="Chair_Obj" x="708" y="210" name="inst_4B9C927A" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="270"/>
+    <instance objName="Chair_Obj" x="708" y="192" name="inst_7624FC79" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="270"/>
+    <instance objName="Chair_Obj" x="708" y="174" name="inst_4DC5357A" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="270"/>
+    <instance objName="Chair_Obj" x="708" y="156" name="inst_04031F12" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="270"/>
+    <instance objName="Drawer_Obj" x="706" y="286" name="inst_361DD60D" locked="0" code="" scaleX="0.600000023841858" scaleY="0.600000023841858" colour="4294967295" rotation="270"/>
+    <instance objName="Drawer_Obj" x="706" y="134" name="inst_A8BFC3C5" locked="0" code="" scaleX="0.600000023841858" scaleY="0.600000023841858" colour="4294967295" rotation="270"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
