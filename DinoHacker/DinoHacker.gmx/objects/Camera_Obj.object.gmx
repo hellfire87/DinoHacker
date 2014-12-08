@@ -54,28 +54,27 @@ paused = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (paused) exit;
+            <string>if (paused || !alive) exit;
 
 //camera look code
-if(alive) {
-    isMixed = lookDirectionLow &gt; lookDirectionHigh;
+isMixed = lookDirectionLow &gt; lookDirectionHigh;
     
-    if (goingTowardsHigh) {
-        direction += 1;
-        if(direction == lookDirectionHigh ) {
-            goingTowardsHigh = false;           
-        }
-    } else {
-        direction -= 1;
-        if (direction == lookDirectionLow ) {
-            goingTowardsHigh = true;
-        }
+if (goingTowardsHigh) {
+    direction += 1;
+    if(direction == lookDirectionHigh ) {
+        goingTowardsHigh = false;           
     }
-} 
+} else {
+    direction -= 1;
+    if (direction == lookDirectionLow ) {
+        goingTowardsHigh = true;
+    }
+}
+ 
 
 //check for the player
 var distanceToPlayer = distance_to_object(playerObject);
-if (alive &amp;&amp; distanceToPlayer &lt; 150) {
+if (distanceToPlayer &lt; 150) {
   playerDirection = point_direction(x,y,playerObject.x,playerObject.y);
   enemyDirection = direction;
   
@@ -91,13 +90,19 @@ if (alive &amp;&amp; distanceToPlayer &lt; 150) {
   doorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
   lockedDoorBetween = collision_line(x,y,playerObject.x, playerObject.y,Door_Obj, false, true) == noone;
   if (checkDirection &lt; 8 &amp;&amp; wallBetween &amp;&amp; doorBetween &amp;&amp; lockedDoorBetween) {
-    enemyObject.alarm[0] = 450;
     direction = round(playerDirection);
-    enemyObject.playerX = playerObject.x;
-    enemyObject.playerY = playerObject.y;
-    enemyObject.isAlert = true;
+    for (i = 0; i &lt; instance_number(enemyObject); i+= 1) {
+      var enemyToFind = instance_find(enemyObject, i);
+      distanceToEnemy = distance_to_point(enemyToFind.x, enemyToFind.y);
+      if (distanceToEnemy &lt; 500) {
+        enemyToFind.alarm[0] = 450;
+        enemyToFind.playerX = playerObject.x;    
+        enemyToFind.playerY = playerObject.y;
+        enemyToFind.isAlert = true;
+      }
+    }
   }  
-} 
+}
 </string>
           </argument>
         </arguments>
