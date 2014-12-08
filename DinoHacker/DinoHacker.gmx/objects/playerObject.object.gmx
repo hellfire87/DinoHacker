@@ -216,7 +216,7 @@ if (!instance_exists(hackingObject)) {
 
 if (!instance_exists(hackingObject)) {
     enemyToCheck = instance_nearest(x,y,enemyObject); 
-    if (distance_to_object(enemyToCheck) &lt; 10) {
+    if (distance_to_object(enemyToCheck) &lt; 20) {
         enemyToCheck.isAlive = false;
     }
 }

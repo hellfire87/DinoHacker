@@ -73,6 +73,14 @@
     </sprites>
     <sprite>sprites\TurretTerminal_Sprite</sprite>
     <sprite>sprites\Walls</sprite>
+    <sprite>sprites\Shader</sprite>
+    <sprite>sprites\Desk</sprite>
+    <sprite>sprites\Table</sprite>
+    <sprite>sprites\Computer</sprite>
+    <sprite>sprites\Chair</sprite>
+    <sprite>sprites\Drawer</sprite>
+    <sprite>sprites\Machine</sprite>
+    <sprite>sprites\Vase</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
@@ -98,6 +106,9 @@
     <path>paths\Level3_Path5</path>
     <path>paths\Level3_Path6</path>
     <path>paths\Level3_Path7</path>
+    <path>paths\Level3_Path8</path>
+    <path>paths\Level3_Path9</path>
+    <path>paths\Level3_Path10</path>
     <path>paths\Tut1_Path1</path>
     <path>paths\Tut1_Path2</path>
     <path>paths\Tut1_Path3</path>
@@ -137,6 +148,14 @@
     <object>objects\Turret_Obj</object>
     <object>objects\TurretHackingTerminal_Obj</object>
     <object>objects\Wall_Obj</object>
+    <object>objects\RoomShader</object>
+    <object>objects\Chair_Obj</object>
+    <object>objects\Table_Obj</object>
+    <object>objects\Computer_Obj</object>
+    <object>objects\Machine_Obj</object>
+    <object>objects\Drawer_Obj</object>
+    <object>objects\Desk_Obj</object>
+    <object>objects\Vase_Obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
