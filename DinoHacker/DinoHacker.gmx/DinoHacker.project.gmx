@@ -81,6 +81,12 @@
     <sprite>sprites\Drawer</sprite>
     <sprite>sprites\Machine</sprite>
     <sprite>sprites\Vase</sprite>
+    <sprites name="playerGroup">
+      <sprite>sprites\PlayerStandRight</sprite>
+      <sprite>sprites\PlayerWalkingRight</sprite>
+      <sprite>sprites\PlayerStandingBack</sprite>
+      <sprite>sprites\PlayerWalkingBack</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
