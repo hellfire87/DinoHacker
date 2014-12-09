@@ -11,6 +11,9 @@
     <sprite>sprites\camera_png</sprite>
     <sprite>sprites\CameraSightCone_Sprite</sprite>
     <sprite>sprites\CameraTerminal_Sprite</sprite>
+    <sprite>sprites\Chair</sprite>
+    <sprite>sprites\Computer</sprite>
+    <sprite>sprites\Desk</sprite>
     <sprite>sprites\Doors</sprite>
     <sprites name="doorSprites">
       <sprite>sprites\DoorClosed_Sprite</sprite>
@@ -18,6 +21,7 @@
       <sprite>sprites\LockedDoor_Sprite</sprite>
     </sprites>
     <sprite>sprites\DoorTerminal_Sprite</sprite>
+    <sprite>sprites\Drawer</sprite>
     <sprite>sprites\EndSprite</sprite>
     <sprites name="enemyGroup">
       <sprite>sprites\enemyDead</sprite>
@@ -48,12 +52,23 @@
       <sprite>sprites\Lvl4_Sprite</sprite>
     </sprites>
     <sprite>sprites\LvlSelect_Title</sprite>
+    <sprite>sprites\Machine</sprite>
     <sprite>sprites\MainMenu_Sprite</sprite>
     <sprites name="pauseGroup">
       <sprite>sprites\Pause_MainMenuSelected_Sprite</sprite>
       <sprite>sprites\Pause_RestartSelected_Sprite</sprite>
       <sprite>sprites\Pause_ResumeSelected_Sprite</sprite>
       <sprite>sprites\Paused_LevelSelectSelected_Sprite</sprite>
+    </sprites>
+    <sprites name="playerGroup">
+      <sprite>sprites\PlayerStandingBack</sprite>
+      <sprite>sprites\PlayerStandingLeft</sprite>
+      <sprite>sprites\PlayerStandingRight</sprite>
+      <sprite>sprites\PlayerWalkingBack</sprite>
+      <sprite>sprites\PlayerWalkingLeft</sprite>
+      <sprite>sprites\PlayerWalkingRight</sprite>
+      <sprite>sprites\PlayerWalkingForward</sprite>
+      <sprite>sprites\PlayerStandingForward</sprite>
     </sprites>
     <sprite>sprites\playerSprite</sprite>
     <sprites name="robotGroup">
@@ -63,8 +78,10 @@
       <sprite>sprites\robotUp</sprite>
     </sprites>
     <sprite>sprites\RobotSightCone_Sprite</sprite>
+    <sprite>sprites\Shader</sprite>
     <sprite>sprites\Start_button</sprite>
     <sprite>sprites\StartSprite</sprite>
+    <sprite>sprites\Table</sprite>
     <sprite>sprites\Terminal</sprite>
     <sprite>sprites\Test</sprite>
     <sprites name="turretGroup">
@@ -72,21 +89,9 @@
       <sprite>sprites\Turret_Sprite</sprite>
     </sprites>
     <sprite>sprites\TurretTerminal_Sprite</sprite>
-    <sprite>sprites\Walls</sprite>
-    <sprite>sprites\Shader</sprite>
-    <sprite>sprites\Desk</sprite>
-    <sprite>sprites\Table</sprite>
-    <sprite>sprites\Computer</sprite>
-    <sprite>sprites\Chair</sprite>
-    <sprite>sprites\Drawer</sprite>
-    <sprite>sprites\Machine</sprite>
     <sprite>sprites\Vase</sprite>
-    <sprites name="playerGroup">
-      <sprite>sprites\PlayerStandRight</sprite>
-      <sprite>sprites\PlayerWalkingRight</sprite>
-      <sprite>sprites\PlayerStandingBack</sprite>
-      <sprite>sprites\PlayerWalkingBack</sprite>
-    </sprites>
+    <sprite>sprites\Walls</sprite>
+    <sprite>sprites\sprite66</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
