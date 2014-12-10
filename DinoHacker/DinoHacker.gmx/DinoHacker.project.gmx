@@ -62,13 +62,13 @@
     </sprites>
     <sprites name="playerGroup">
       <sprite>sprites\PlayerStandingBack</sprite>
+      <sprite>sprites\PlayerStandingForward</sprite>
       <sprite>sprites\PlayerStandingLeft</sprite>
       <sprite>sprites\PlayerStandingRight</sprite>
       <sprite>sprites\PlayerWalkingBack</sprite>
+      <sprite>sprites\PlayerWalkingForward</sprite>
       <sprite>sprites\PlayerWalkingLeft</sprite>
       <sprite>sprites\PlayerWalkingRight</sprite>
-      <sprite>sprites\PlayerWalkingForward</sprite>
-      <sprite>sprites\PlayerStandingForward</sprite>
     </sprites>
     <sprite>sprites\playerSprite</sprite>
     <sprites name="robotGroup">
@@ -138,8 +138,12 @@
     <object>objects\Beginning</object>
     <object>objects\Camera_Obj</object>
     <object>objects\CameraTerminal_Obj</object>
+    <object>objects\Chair_Obj</object>
+    <object>objects\Computer_Obj</object>
+    <object>objects\Desk_Obj</object>
     <object>objects\Door_Obj</object>
     <object>objects\DoorHackingTerminal_Obj</object>
+    <object>objects\Drawer_Obj</object>
     <object>objects\enemyObject</object>
     <object>objects\hackingObject</object>
     <object>objects\LevelEnd_Obj</object>
@@ -149,24 +153,20 @@
     <object>objects\Lvl1_Button</object>
     <object>objects\Lvl2_Button</object>
     <object>objects\Lvl3_Button</object>
+    <object>objects\Machine_Obj</object>
     <object>objects\MainMenu_Button</object>
     <object>objects\Pause_Obj</object>
     <object>objects\playerObject</object>
     <object>objects\Robot_Obj</object>
+    <object>objects\RoomShader</object>
     <object>objects\Start</object>
+    <object>objects\Table_Obj</object>
     <object>objects\Terminal_Obj</object>
     <object>objects\Tester</object>
     <object>objects\Turret_Obj</object>
     <object>objects\TurretHackingTerminal_Obj</object>
-    <object>objects\Wall_Obj</object>
-    <object>objects\RoomShader</object>
-    <object>objects\Chair_Obj</object>
-    <object>objects\Table_Obj</object>
-    <object>objects\Computer_Obj</object>
-    <object>objects\Machine_Obj</object>
-    <object>objects\Drawer_Obj</object>
-    <object>objects\Desk_Obj</object>
     <object>objects\Vase_Obj</object>
+    <object>objects\Wall_Obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
