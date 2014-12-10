@@ -83,7 +83,6 @@
     <sprite>sprites\StartSprite</sprite>
     <sprite>sprites\Table</sprite>
     <sprite>sprites\Terminal</sprite>
-    <sprite>sprites\Test</sprite>
     <sprites name="turretGroup">
       <sprite>sprites\TurretHacked_Sprite</sprite>
       <sprite>sprites\Turret_Sprite</sprite>
@@ -92,6 +91,10 @@
     <sprite>sprites\Vase</sprite>
     <sprite>sprites\Walls</sprite>
     <sprite>sprites\sprite66</sprite>
+    <sprites name="hints">
+      <sprite>sprites\Hint01</sprite>
+      <sprite>sprites\hint02</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
@@ -167,6 +170,10 @@
     <object>objects\TurretHackingTerminal_Obj</object>
     <object>objects\Vase_Obj</object>
     <object>objects\Wall_Obj</object>
+    <objects name="Hint_Objects">
+      <object>objects\object32</object>
+      <object>objects\object33</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
