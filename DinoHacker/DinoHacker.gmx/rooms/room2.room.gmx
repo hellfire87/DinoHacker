@@ -92,7 +92,7 @@ mp_grid_add_instances(grid, LockedDoor_Obj, true);</code>
     <instance objName="Door_Obj" x="114" y="710" name="inst_CFA47512" locked="0" code="" scaleX="1" scaleY="0.469999998807907" colour="4294967295" rotation="0"/>
     <instance objName="playerObject" x="56" y="708" name="inst_C789FA3E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Robot_Obj" x="772" y="308" name="inst_2B931195" locked="0" code="direction = 90;&#xA;enemyPath = Level2_Path3;&#xA;path_start(enemyPath, 3, 2, true)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Turret_Obj" x="772" y="656" name="inst_E8F8DEFA" locked="0" code="" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="Turret_Obj" x="772" y="656" name="inst_E8F8DEFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="520" y="712" name="inst_7D9E2CE3" locked="0" code="enemyPath = Level2_Path2;&#xA;path_start(enemyPath, 3, 2, true)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="504" y="52" name="inst_E62CBE1D" locked="0" code="direction = 180;&#xA;enemyPath = Level2_Path5;&#xA;path_start(enemyPath, 3, 2, true)" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="76" y="244" name="inst_90F3320E" locked="0" code="enemyPath = Level2_Path4;&#xA;path_start(enemyPath, 3, 2, true)&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -102,9 +102,9 @@ mp_grid_add_instances(grid, LockedDoor_Obj, true);</code>
     <instance objName="LevelEnd_Obj" x="1262" y="52" name="inst_9F6EBF0D" locked="0" code="" scaleX="2.5" scaleY="2.5" colour="4294967295" rotation="0"/>
     <instance objName="LockedDoor_Obj" x="224" y="470" name="LockedDoor_01" locked="0" code="" scaleX="1" scaleY="0.474999994039536" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="1124" y="64" name="inst_62B5A7B1" locked="0" code="direction = 270;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="868" y="624" name="inst_A0E8AF0B" locked="0" code="Direction = 0;&#xA;lookDirectionLow = 0;&#xA;lookDirectionHigh = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="1296" y="324" name="inst_381FDAA4" locked="0" code="lookDirectionHigh = 270;&#xA;lookDirectionLow = 180;&#xA;direction = lookDirectionLow;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Camera_Obj" x="40" y="472" name="inst_8A5F157D" locked="0" code="Direction = 0;&#xA;lookDirectionLow = 270;&#xA;lookDirectionHigh = 90;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="854" y="638" name="inst_A0E8AF0B" locked="0" code="Direction = 0;&#xA;lookDirectionLow = 0;&#xA;lookDirectionHigh = 90;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="1324" y="322" name="inst_381FDAA4" locked="0" code="lookDirectionHigh = 270;&#xA;lookDirectionLow = 180;&#xA;direction = lookDirectionLow;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="Camera_Obj" x="26" y="470" name="inst_8A5F157D" locked="0" code="Direction = 0;&#xA;lookDirectionLow = 270;&#xA;lookDirectionHigh = 90;&#xA;&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="772" y="72" name="inst_D3DD1B48" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="992" y="244" name="inst_A46B7467" locked="0" code="direction = 90;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="enemyObject" x="1248" y="160" name="inst_EF51CA2F" locked="0" code="direction = 270;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
