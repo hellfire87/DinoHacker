@@ -7,21 +7,12 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\boom_it_goes</sprite>
-    <sprite>sprites\Button_Changed</sprite>
     <sprite>sprites\camera_png</sprite>
-    <sprite>sprites\CameraSightCone_Sprite</sprite>
-    <sprite>sprites\CameraTerminal_Sprite</sprite>
-    <sprite>sprites\Chair</sprite>
-    <sprite>sprites\Computer</sprite>
-    <sprite>sprites\Desk</sprite>
-    <sprite>sprites\Doors</sprite>
     <sprites name="doorSprites">
       <sprite>sprites\DoorClosed_Sprite</sprite>
       <sprite>sprites\DoorOpen_Sprite</sprite>
       <sprite>sprites\LockedDoor_Sprite</sprite>
     </sprites>
-    <sprite>sprites\DoorTerminal_Sprite</sprite>
-    <sprite>sprites\Drawer</sprite>
     <sprite>sprites\EndSprite</sprite>
     <sprites name="enemyGroup">
       <sprite>sprites\enemyDead</sprite>
@@ -30,7 +21,6 @@
       <sprite>sprites\enemyRight</sprite>
       <sprite>sprites\enemyUp</sprite>
     </sprites>
-    <sprite>sprites\EnemySightCone_Sprite</sprite>
     <sprites name="HackingSprites">
       <sprite>sprites\hackingSpritePrime1</sprite>
       <sprite>sprites\hackingSpritePrime2</sprite>
@@ -39,8 +29,12 @@
     </sprites>
     <sprite>sprites\hazmat</sprite>
     <sprite>sprites\hazmatmovL</sprite>
-    <sprite>sprites\Level_Select</sprite>
-    <sprite>sprites\LockedDoor</sprite>
+    <sprites name="hints">
+      <sprite>sprites\Hint01</sprite>
+      <sprite>sprites\hint02</sprite>
+      <sprite>sprites\Hint03</sprite>
+      <sprite>sprites\sprite72</sprite>
+    </sprites>
     <sprites name="lvlButtons">
       <sprite>sprites\Lvl1_Changed</sprite>
       <sprite>sprites\Lvl1_Sprite</sprite>
@@ -51,9 +45,13 @@
       <sprite>sprites\Lvl4_Changed</sprite>
       <sprite>sprites\Lvl4_Sprite</sprite>
     </sprites>
-    <sprite>sprites\LvlSelect_Title</sprite>
-    <sprite>sprites\Machine</sprite>
-    <sprite>sprites\MainMenu_Sprite</sprite>
+    <sprites name="menuSprites">
+      <sprite>sprites\Button_Changed</sprite>
+      <sprite>sprites\Level_Select</sprite>
+      <sprite>sprites\LvlSelect_Title</sprite>
+      <sprite>sprites\MainMenu_Sprite</sprite>
+      <sprite>sprites\Start_button</sprite>
+    </sprites>
     <sprites name="pauseGroup">
       <sprite>sprites\Pause_MainMenuSelected_Sprite</sprite>
       <sprite>sprites\Pause_RestartSelected_Sprite</sprite>
@@ -70,32 +68,43 @@
       <sprite>sprites\PlayerWalkingLeft</sprite>
       <sprite>sprites\PlayerWalkingRight</sprite>
     </sprites>
-    <sprite>sprites\playerSprite</sprite>
+    <sprites name="propSprites">
+      <sprite>sprites\Chair</sprite>
+      <sprite>sprites\Computer</sprite>
+      <sprite>sprites\Desk</sprite>
+      <sprite>sprites\Drawer</sprite>
+      <sprite>sprites\Machine</sprite>
+      <sprite>sprites\Table</sprite>
+      <sprite>sprites\Vase</sprite>
+    </sprites>
     <sprites name="robotGroup">
       <sprite>sprites\robotDown</sprite>
       <sprite>sprites\robotLeft</sprite>
       <sprite>sprites\robotRight</sprite>
       <sprite>sprites\robotUp</sprite>
     </sprites>
-    <sprite>sprites\RobotSightCone_Sprite</sprite>
     <sprite>sprites\Shader</sprite>
-    <sprite>sprites\Start_button</sprite>
+    <sprites name="sightConeSprites">
+      <sprite>sprites\CameraSightCone_Sprite</sprite>
+      <sprite>sprites\EnemySightCone_Sprite</sprite>
+      <sprite>sprites\RobotSightCone_Sprite</sprite>
+    </sprites>
     <sprite>sprites\StartSprite</sprite>
-    <sprite>sprites\Table</sprite>
-    <sprite>sprites\Terminal</sprite>
+    <sprites name="terminalSprites">
+      <sprite>sprites\TurretTerminal_Sprite</sprite>
+      <sprite>sprites\DoorTerminal_Sprite</sprite>
+      <sprite>sprites\CameraTerminal_Sprite</sprite>
+    </sprites>
     <sprites name="turretGroup">
       <sprite>sprites\TurretHacked_Sprite</sprite>
       <sprite>sprites\Turret_Sprite</sprite>
     </sprites>
-    <sprite>sprites\TurretTerminal_Sprite</sprite>
-    <sprite>sprites\Vase</sprite>
-    <sprite>sprites\Walls</sprite>
-    <sprite>sprites\sprite66</sprite>
-    <sprites name="hints">
-      <sprite>sprites\Hint01</sprite>
-      <sprite>sprites\hint02</sprite>
-      <sprite>sprites\Hint03</sprite>
-      <sprite>sprites\sprite72</sprite>
+    <sprites name="oldSprites">
+      <sprite>sprites\Doors</sprite>
+      <sprite>sprites\LockedDoor</sprite>
+      <sprite>sprites\playerSprite</sprite>
+      <sprite>sprites\Terminal</sprite>
+      <sprite>sprites\Walls</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
