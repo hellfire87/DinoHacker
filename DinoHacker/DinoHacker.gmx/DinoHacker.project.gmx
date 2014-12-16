@@ -94,6 +94,16 @@
       <sprite>sprites\robotRight</sprite>
       <sprite>sprites\robotUp</sprite>
     </sprites>
+    <sprites name="robotSprites">
+      <sprite>sprites\robotStandingBackward_Sprite</sprite>
+      <sprite>sprites\robotStandingForward_Sprite</sprite>
+      <sprite>sprites\robotStandingLeft_Sprite</sprite>
+      <sprite>sprites\robotStandingRight_Sprite</sprite>
+      <sprite>sprites\robotWalkingBackward_Sprite</sprite>
+      <sprite>sprites\robotWalkingLeft_Sprite</sprite>
+      <sprite>sprites\robotWalkingRight_Sprite</sprite>
+      <sprite>sprites\robotWalkingForward_Sprite</sprite>
+    </sprites>
     <sprite>sprites\Shader</sprite>
     <sprites name="sightConeSprites">
       <sprite>sprites\CameraSightCone_Sprite</sprite>
