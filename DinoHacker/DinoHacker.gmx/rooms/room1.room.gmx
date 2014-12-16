@@ -154,6 +154,7 @@ mp_grid_add_instances(grid, LockedDoor_Obj, true);</code>
     <instance objName="Table_Obj" x="958" y="414" name="inst_0CF4C2FB" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
     <instance objName="Computer_Obj" x="922" y="442" name="inst_2E512BF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="90"/>
     <instance objName="Chair_Obj" x="948" y="466" name="inst_1CC4CF03" locked="0" code="" scaleX="0.699999988079071" scaleY="0.699999988079071" colour="4294967295" rotation="180"/>
+    <instance objName="Vending_Obj" x="864" y="398" name="inst_2A11E20F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

@@ -32,6 +32,11 @@
       <sprite>sprites\hint02</sprite>
       <sprite>sprites\Hint03</sprite>
       <sprite>sprites\sprite72</sprite>
+      <sprite>sprites\Hint04</sprite>
+      <sprite>sprites\Hint05</sprite>
+      <sprite>sprites\Hint06</sprite>
+      <sprite>sprites\Hint07</sprite>
+      <sprite>sprites\Hint08</sprite>
     </sprites>
     <sprites name="humanEnemySprites">
       <sprite>sprites\humanEnemyStanding_Sprite</sprite>
@@ -87,6 +92,8 @@
       <sprite>sprites\Machine</sprite>
       <sprite>sprites\Table</sprite>
       <sprite>sprites\Vase</sprite>
+      <sprite>sprites\Bed</sprite>
+      <sprite>sprites\VendingMachine</sprite>
     </sprites>
     <sprites name="robotGroup">
       <sprite>sprites\robotDown</sprite>
@@ -200,7 +207,14 @@
       <object>objects\object33</object>
       <object>objects\object34</object>
       <object>objects\object35</object>
+      <object>objects\object36</object>
+      <object>objects\object37</object>
+      <object>objects\object38</object>
+      <object>objects\object39</object>
+      <object>objects\object42</object>
     </objects>
+    <object>objects\Bed_Obj</object>
+    <object>objects\Vending_Obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
