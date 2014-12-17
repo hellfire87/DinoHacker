@@ -127,6 +127,7 @@
       <sprite>sprites\TurretHacked_Sprite</sprite>
       <sprite>sprites\Turret_Sprite</sprite>
     </sprites>
+    <sprite>sprites\camera_Sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
