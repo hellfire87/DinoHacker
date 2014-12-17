@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\boom_it_goes</sprite>
     <sprite>sprites\camera_png</sprite>
+    <sprite>sprites\camera_Sprite</sprite>
     <sprites name="doorSprites">
       <sprite>sprites\DoorClosed_Sprite</sprite>
       <sprite>sprites\DoorOpen_Sprite</sprite>
@@ -127,7 +128,6 @@
       <sprite>sprites\TurretHacked_Sprite</sprite>
       <sprite>sprites\Turret_Sprite</sprite>
     </sprites>
-    <sprite>sprites\camera_Sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
@@ -173,36 +173,12 @@
   <objects name="objects">
     <object>objects\Beginning</object>
     <object>objects\Camera_Obj</object>
-    <object>objects\CameraTerminal_Obj</object>
-    <object>objects\Chair_Obj</object>
-    <object>objects\Computer_Obj</object>
-    <object>objects\Desk_Obj</object>
-    <object>objects\Door_Obj</object>
-    <object>objects\DoorHackingTerminal_Obj</object>
-    <object>objects\Drawer_Obj</object>
+    <objects name="door_objects">
+      <object>objects\Door_Obj</object>
+      <object>objects\LockedDoor_Obj</object>
+    </objects>
     <object>objects\enemyObject</object>
     <object>objects\hackingObject</object>
-    <object>objects\LevelEnd_Obj</object>
-    <object>objects\LevelSelect</object>
-    <object>objects\LockedDoor_Obj</object>
-    <object>objects\LS_Title</object>
-    <object>objects\Lvl1_Button</object>
-    <object>objects\Lvl2_Button</object>
-    <object>objects\Lvl3_Button</object>
-    <object>objects\Machine_Obj</object>
-    <object>objects\MainMenu_Button</object>
-    <object>objects\Pause_Obj</object>
-    <object>objects\playerObject</object>
-    <object>objects\Robot_Obj</object>
-    <object>objects\RoomShader</object>
-    <object>objects\Start</object>
-    <object>objects\Table_Obj</object>
-    <object>objects\Terminal_Obj</object>
-    <object>objects\Tester</object>
-    <object>objects\Turret_Obj</object>
-    <object>objects\TurretHackingTerminal_Obj</object>
-    <object>objects\Vase_Obj</object>
-    <object>objects\Wall_Obj</object>
     <objects name="Hint_Objects">
       <object>objects\object32</object>
       <object>objects\object33</object>
@@ -213,9 +189,41 @@
       <object>objects\object38</object>
       <object>objects\object39</object>
       <object>objects\object42</object>
+      <object>objects\Tester</object>
     </objects>
-    <object>objects\Bed_Obj</object>
-    <object>objects\Vending_Obj</object>
+    <object>objects\LevelEnd_Obj</object>
+    <objects name="menu_Objects">
+      <object>objects\LevelSelect</object>
+      <object>objects\LS_Title</object>
+      <object>objects\Lvl1_Button</object>
+      <object>objects\Lvl2_Button</object>
+      <object>objects\Lvl3_Button</object>
+      <object>objects\MainMenu_Button</object>
+      <object>objects\Start</object>
+    </objects>
+    <object>objects\Pause_Obj</object>
+    <object>objects\playerObject</object>
+    <objects name="prop_objects">
+      <object>objects\Bed_Obj</object>
+      <object>objects\Chair_Obj</object>
+      <object>objects\Computer_Obj</object>
+      <object>objects\Desk_Obj</object>
+      <object>objects\Drawer_Obj</object>
+      <object>objects\Machine_Obj</object>
+      <object>objects\Table_Obj</object>
+      <object>objects\Vase_Obj</object>
+      <object>objects\Vending_Obj</object>
+    </objects>
+    <object>objects\Robot_Obj</object>
+    <object>objects\RoomShader</object>
+    <object>objects\Terminal_Obj</object>
+    <objects name="terminalObjects">
+      <object>objects\CameraTerminal_Obj</object>
+      <object>objects\DoorHackingTerminal_Obj</object>
+      <object>objects\TurretHackingTerminal_Obj</object>
+    </objects>
+    <object>objects\Turret_Obj</object>
+    <object>objects\Wall_Obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
