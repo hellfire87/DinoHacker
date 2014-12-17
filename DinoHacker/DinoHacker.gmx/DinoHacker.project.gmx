@@ -128,11 +128,13 @@
       <sprite>sprites\TurretHacked_Sprite</sprite>
       <sprite>sprites\Turret_Sprite</sprite>
     </sprites>
+    <sprite>sprites\Credits_Sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\MenuBackground</background>
     <background>background\LS_Background</background>
     <background>background\background2</background>
+    <background>background\ThankYouBackground</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\Level1_Path1</path>
@@ -224,6 +226,8 @@
     </objects>
     <object>objects\Turret_Obj</object>
     <object>objects\Wall_Obj</object>
+    <object>objects\credits_Object</object>
+    <object>objects\ThankYou_Object</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Menu</room>
@@ -232,6 +236,8 @@
     <room>rooms\room1</room>
     <room>rooms\room2</room>
     <room>rooms\room3</room>
+    <room>rooms\Credits</room>
+    <room>rooms\ThankYouScreen</room>
     <room>rooms\Level_Selecter</room>
     <room>rooms\testRoom</room>
   </rooms>
