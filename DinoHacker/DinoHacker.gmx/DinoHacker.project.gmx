@@ -61,6 +61,7 @@
       <sprite>sprites\LvlSelect_Title</sprite>
       <sprite>sprites\MainMenu_Sprite</sprite>
       <sprite>sprites\Start_button</sprite>
+      <sprite>sprites\CreditsButton_Sprite</sprite>
     </sprites>
     <sprites name="oldSprites">
       <sprite>sprites\Doors</sprite>
@@ -196,6 +197,7 @@
     <object>objects\LevelEnd_Obj</object>
     <objects name="menu_Objects">
       <object>objects\LevelSelect</object>
+      <object>objects\CreditsButton_Object</object>
       <object>objects\LS_Title</object>
       <object>objects\Lvl1_Button</object>
       <object>objects\Lvl2_Button</object>
